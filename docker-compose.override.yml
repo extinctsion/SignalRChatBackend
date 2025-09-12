@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  chatbackend:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      # Development-specific logging
+      - Logging__LogLevel__Default=Debug
+      - Logging__LogLevel__Microsoft.AspNetCore=Information
+      - Logging__LogLevel__Microsoft.AspNetCore.SignalR=Debug
+      - Logging__LogLevel__Microsoft.AspNetCore.Http.Connections=Debug
+    volumes:
+      # Mount source code for development (optional - for hot reload)
+      # - .:/app/src:ro
+      # Mount logs directory
+      - ./logs:/app/logs
+    ports:
+      - "5000:8080"   # HTTP only
+
+  # Redis Commander for development (optional Redis web UI)
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis-commander
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - "8082:8081"  # Changed to avoid conflicts
+    depends_on:
+      - redis
+    networks:
+      - chat-network
+    profiles:
+      - tools  # Use with: docker-compose --profile tools up

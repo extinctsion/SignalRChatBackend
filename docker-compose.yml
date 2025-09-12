@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # Redis service for SignalR backplane
+  redis:
+    image: redis:7-alpine
+    container_name: chat-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - chat-network
+
+  # Chat Backend API
+  chatbackend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chat-backend
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+      # Database connection (external PostgreSQL)
+      - ConnectionStrings__DefaultConnection=Host=host.docker.internal;Database=chatbackend;Username=postgres;Password=root
+      # Redis connection
+      - ConnectionStrings__Redis=redis:6379
+      # JWT Configuration
+      - Jwt__Key=your-256-bit-secret-key-here-make-it-very-long-and-secure-for-docker
+      - Jwt__Issuer=ChatBackend
+      - Jwt__Audience=ChatBackendUsers
+      # AWS Configuration (set these if using S3)
+      - AWS__Region=us-east-1
+      - AWS__S3__BucketName=chat-files-bucket
+      # Logging
+      - Logging__LogLevel__Default=Information
+      - Logging__LogLevel__Microsoft.AspNetCore.SignalR=Debug
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+    networks:
+      - chat-network
+    volumes:
+      - ./logs:/app/logs
+
+networks:
+  chat-network:
+    driver: bridge
+
+volumes:
+  redis_data:
+    driver: local
