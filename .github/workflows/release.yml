@@ -23,8 +23,7 @@ jobs:
       - name: Build
         run: dotnet build SignalRChat.sln --configuration Release --no-restore
 
-      - name: Publish
-        run: dotnet publish ChatBackend.csproj --configuration Release --output ./publish
+      # Remove publish step since we only want source code
 
       - name: Get latest tag
         id: get_tag
@@ -48,11 +47,21 @@ jobs:
           git tag ${{ steps.get_tag.outputs.tag }}
           git push https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git --tags
 
+      - name: Archive source code (zip)
+        run: |
+          git archive --format zip --output source-${{ steps.get_tag.outputs.tag }}.zip HEAD
+
+      - name: Archive source code (tar.gz)
+        run: |
+          git archive --format tar.gz --output source-${{ steps.get_tag.outputs.tag }}.tar.gz HEAD
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.get_tag.outputs.tag }}
           name: Release ${{ steps.get_tag.outputs.tag }}
-          files: ./publish/**
+          files: |
+            source-${{ steps.get_tag.outputs.tag }}.zip
+            source-${{ steps.get_tag.outputs.tag }}.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
