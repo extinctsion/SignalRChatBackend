@@ -18,13 +18,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore SignalRChat.sln
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build SignalRChat.sln --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish --configuration Release --output ./publish
+        run: dotnet publish ChatBackend.csproj --configuration Release --output ./publish
 
       - name: Get latest tag
         id: get_tag
