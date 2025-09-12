@@ -40,17 +40,13 @@ jobs:
           fi
 
       - name: Create Release Tag
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const tag = process.env['TAG'] || '${{ steps.get_tag.outputs.tag }}';
-            const sha = process.env['GITHUB_SHA'] || '${{ github.sha }}';
-            await github.rest.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: `refs/tags/${tag}`,
-              sha: sha
-            });
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git tag ${{ steps.get_tag.outputs.tag }}
+          git push https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git --tags
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -59,4 +55,4 @@ jobs:
           name: Release ${{ steps.get_tag.outputs.tag }}
           files: ./publish/**
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
