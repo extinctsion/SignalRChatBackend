@@ -39,4 +39,16 @@ namespace ChatBackend.Services
         Task<bool> DeleteFileAsync(string fileUrl);
         Task<string> GetPresignedUrlAsync(string fileKey, TimeSpan expiration);
     }
+
+
+
+    public interface IAppLogger
+    {
+        void Info(string message, object? context = null);
+        void Warn(string message, object? context = null);
+        void Error(string message, Exception? ex = null, object? context = null);
+        void Debug(string message, object? context = null);
+        void LogBusinessEvent(string message, object? context = null);
+        void TrackExecutionTime(string operation, TimeSpan duration, object? context = null);
+    }
 }
