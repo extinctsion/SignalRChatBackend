@@ -17,8 +17,9 @@ namespace ChatBackend.Services
         public void Error(string message, Exception? ex = null, object? context = null) => PushContext(context, () => _logger.Error(ex, message));
         public void Debug(string message, object? context = null) => PushContext(context, () => _logger.Debug(message));
 
-        public void LogBusinessEvent(string message, object? context = null) => PushContext(context, () => _logger.Information("[BusinessEvent] " + message));
-        public void TrackExecutionTime(string operation, TimeSpan duration, object? context = null) => PushContext(context, () => _logger.Information("{Operation} took {Duration}ms", operation, duration.TotalMilliseconds));
+        public void LogBusinessEvent(string message, object? context = null) => PushContext(context, () => _logger
+             .ForContext("EventType", "BusinessEvent")
+             .Information(message)); public void TrackExecutionTime(string operation, TimeSpan duration, object? context = null) => PushContext(context, () => _logger.Information("{Operation} took {Duration}ms", operation, duration.TotalMilliseconds));
 
         private void PushContext(object? context, Action logAction)
         {

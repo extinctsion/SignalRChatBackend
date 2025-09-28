@@ -21,6 +21,8 @@ var logFilePath = builder.Configuration["LoggingPaths:FilePath"]
                   ?? "logs/chatbackend-.txt";
 
 var env = builder.Environment;
+var minimumLevel = env.IsDevelopment() ? Serilog.Events.LogEventLevel.Debug : Serilog.Events.LogEventLevel.Information;
+
 
 // Configure Serilog
 var loggerConfig = new LoggerConfiguration()
@@ -31,7 +33,7 @@ var loggerConfig = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File(logFilePath, rollingInterval: RollingInterval.Day)
     .WriteTo.Seq(seqUrl)
-    .MinimumLevel.Debug();
+    .MinimumLevel.Is(minimumLevel);
 
 if (env.IsDevelopment())
 {
