@@ -14,6 +14,12 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var seqUrl = builder.Configuration["LoggingPaths:SeqServerUrl"]
+             ?? "http://localhost:5341";
+
+var logFilePath = builder.Configuration["LoggingPaths:FilePath"]
+                  ?? "logs/chatbackend-.txt";
+
 var env = builder.Environment;
 
 // Configure Serilog
@@ -23,8 +29,8 @@ var loggerConfig = new LoggerConfiguration()
     .Enrich.WithEnvironmentName()    
     .Enrich.WithEnvironmentUserName() 
     .WriteTo.Console()
-    .WriteTo.File("logs/chatbackend-.txt", rollingInterval: RollingInterval.Day)
-    .WriteTo.Seq("http://localhost:5341")
+    .WriteTo.File(logFilePath, rollingInterval: RollingInterval.Day)
+    .WriteTo.Seq(seqUrl)
     .MinimumLevel.Debug();
 
 if (env.IsDevelopment())
