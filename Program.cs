@@ -11,16 +11,34 @@ using ChatBackend.Hubs;
 using ChatBackend.Middleware;
 using System.Text;
 
-// Configure Serilog
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .WriteTo.File("logs/chatbackend-.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
 
+var env = builder.Environment;
+
+// Configure Serilog
+var loggerConfig = new LoggerConfiguration()
+    .Enrich.FromLogContext()           
+    .Enrich.WithMachineName()         
+    .Enrich.WithEnvironmentName()    
+    .Enrich.WithEnvironmentUserName() 
+    .WriteTo.Console()
+    .WriteTo.File("logs/chatbackend-.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.Seq("http://localhost:5341")
+    .MinimumLevel.Debug();
+
+if (env.IsDevelopment())
+{
+    loggerConfig = loggerConfig
+        .Enrich.WithThreadId()
+        .Enrich.WithThreadName();
+}
+
+Log.Logger = loggerConfig.CreateLogger();
+
 // Use Serilog
 builder.Host.UseSerilog();
+
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -118,6 +136,8 @@ builder.Services.AddCors(options =>
     });
 });
 
+
+
 // Add SignalR with Redis backplane
 builder.Services.AddSignalR()
     .AddStackExchangeRedis(builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379");
@@ -130,6 +150,11 @@ builder.Services.AddDefaultAWSOptions(new AWSOptions
 builder.Services.AddAWSService<IAmazonS3>();
 
 // Add application services
+
+//Singleton
+builder.Services.AddSingleton<IAppLogger, AppLoggerService>();
+
+// Scoped
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IMessageService, MessageService>();
 builder.Services.AddScoped<IConversationService, ConversationService>();
@@ -141,6 +166,8 @@ builder.Services.AddHealthChecks()
     .AddCheck("redis", () => Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult.Healthy());
 
 var app = builder.Build();
+
+app.UseSerilogRequestLogging();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
