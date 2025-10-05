@@ -23,12 +23,12 @@ services:
   chatbackend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ChatBackend.API/Dockerfile
     container_name: chat-backend
     ports:
       - "5000:8080"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8080
       # Database connection (external PostgreSQL)
       - ConnectionStrings__DefaultConnection=Host=host.docker.internal;Database=chatbackend;Username=postgres;Password=root

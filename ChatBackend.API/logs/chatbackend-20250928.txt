@@ -1,0 +1,695 @@
+2025-09-28 12:33:57.925 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_967f485c19cc4ce6b5ce2e3c5e930ca4
+2025-09-28 12:33:59.194 +05:30 [INF] Connected to Redis.
+2025-09-28 12:34:07.846 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 12:34:08.551 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 12:34:08.565 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 12:34:08.574 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 12:34:08.578 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 12:34:08.586 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 12:34:08.700 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 12:34:09.688 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 12:34:09.690 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 12:34:09.899 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 12:34:09.902 +05:30 [INF] Hosting environment: Development
+2025-09-28 12:34:09.904 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 12:34:16.656 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/index.html - null null
+2025-09-28 12:34:17.457 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 234.6570 ms
+2025-09-28 12:34:17.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/index.html - 200 null text/html;charset=utf-8 874.9793ms
+2025-09-28 12:34:17.739 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/swagger-ui.css - null null
+2025-09-28 12:34:17.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/index.css - null null
+2025-09-28 12:34:17.787 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/swagger-ui-bundle.js - null null
+2025-09-28 12:34:17.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-28 12:34:17.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 12:34:17.787 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/index.js - null null
+2025-09-28 12:34:17.850 +05:30 [INF] HTTP GET /swagger/index.js responded 200 in 2.4705 ms
+2025-09-28 12:34:17.860 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/index.js - 200 null application/javascript;charset=utf-8 72.0251ms
+2025-09-28 12:34:17.905 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 118.7929ms
+2025-09-28 12:34:17.925 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 177.5228 ms
+2025-09-28 12:34:17.925 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 100.7871 ms
+2025-09-28 12:34:17.925 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 92.0156 ms
+2025-09-28 12:34:17.935 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/swagger-ui.css - 304 null null 196.5213ms
+2025-09-28 12:34:17.937 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 108.1986 ms
+2025-09-28 12:34:17.944 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/index.css - 304 null null 157.3492ms
+2025-09-28 12:34:17.953 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/swagger-ui-standalone-preset.js - 304 null null 167.1716ms
+2025-09-28 12:34:17.962 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/swagger-ui-bundle.js - 304 null null 174.9036ms
+2025-09-28 12:34:18.106 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 12:34:18.627 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 521.0436ms
+2025-09-28 12:34:19.027 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 12:34:19.096 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 49.2326 ms
+2025-09-28 12:34:19.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.9883ms
+2025-09-28 12:34:19.231 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/favicon-32x32.png - null null
+2025-09-28 12:34:19.240 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 304 in 0.6703 ms
+2025-09-28 12:34:19.244 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/favicon-32x32.png - 304 null null 13.3784ms
+2025-09-28 12:35:09.876 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Auth/quick-token - null null
+2025-09-28 12:35:13.004 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.AuthController.GenerateQuickToken (ChatBackend)'
+2025-09-28 12:35:13.084 +05:30 [INF] Route matched with {action = "GenerateQuickToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateQuickToken() on controller ChatBackend.Controllers.AuthController (ChatBackend).
+2025-09-28 12:35:13.212 +05:30 [INF] Generated quick test token for user: e8b8d6e5-1ad9-415b-8bcd-fa3f484b88a0
+2025-09-28 12:35:13.223 +05:30 [INF] Executing OkObjectResult, writing value of type 'ChatBackend.Controllers.TokenResponse'.
+2025-09-28 12:35:13.244 +05:30 [INF] Executed action ChatBackend.Controllers.AuthController.GenerateQuickToken (ChatBackend) in 152.7979ms
+2025-09-28 12:35:13.246 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.AuthController.GenerateQuickToken (ChatBackend)'
+2025-09-28 12:35:13.248 +05:30 [INF] HTTP GET /api/Auth/quick-token responded 200 in 3362.9323 ms
+2025-09-28 12:35:13.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Auth/quick-token - 200 null application/json; charset=utf-8 3377.5491ms
+2025-09-28 12:36:08.229 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=10 - null null
+2025-09-28 12:36:08.346 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 12:36:08.379 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 12:36:30.901 +05:30 [INF] Executed DbCommand (429ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+ORDER BY u."Username"
+LIMIT @__p_1 OFFSET @__p_0
+2025-09-28 12:36:35.972 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.UserDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 12:36:35.992 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 27610.5545ms
+2025-09-28 12:36:35.998 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 12:36:36.004 +05:30 [INF] HTTP GET /api/Users responded 200 in 27753.9445 ms
+2025-09-28 12:36:36.028 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=10 - 200 null application/json; charset=utf-8 27799.1126ms
+2025-09-28 12:48:19.706 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=56 - null null
+2025-09-28 12:48:20.261 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 12:48:20.328 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 12:48:26.017 +05:30 [INF] Executed DbCommand (271ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+ORDER BY u."Username"
+LIMIT @__p_1 OFFSET @__p_0
+2025-09-28 12:48:26.248 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.UserDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 12:48:26.299 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 5962.1645ms
+2025-09-28 12:48:26.306 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 12:48:26.308 +05:30 [INF] HTTP GET /api/Users responded 200 in 6406.4359 ms
+2025-09-28 12:48:26.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=56 - 200 null application/json; charset=utf-8 6652.676ms
+2025-09-28 13:16:35.634 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_51b8f357846d4e41b8407c0910126cc0
+2025-09-28 13:16:36.846 +05:30 [INF] Connected to Redis.
+2025-09-28 13:16:39.761 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 13:16:40.297 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 13:16:40.322 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 13:16:40.333 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 13:16:40.338 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 13:16:40.349 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 13:16:40.444 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 13:16:40.993 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 13:16:40.995 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 13:16:41.164 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 13:16:41.168 +05:30 [INF] Hosting environment: Development
+2025-09-28 13:16:41.170 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 13:16:43.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 13:16:43.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 13:16:43.864 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 277.9751ms
+2025-09-28 13:16:44.094 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 523.4936ms
+2025-09-28 13:16:44.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 13:16:45.131 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 500.6270 ms
+2025-09-28 13:16:45.144 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 756.1965ms
+2025-09-28 13:17:20.518 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=15 - null null
+2025-09-28 13:17:20.939 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 13:17:21.029 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 13:17:35.477 +05:30 [INF] Executed DbCommand (227ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+ORDER BY u."Username"
+LIMIT @__p_1 OFFSET @__p_0
+2025-09-28 13:17:35.775 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.UserDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 13:17:35.848 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 14807.4147ms
+2025-09-28 13:17:35.854 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 13:17:35.857 +05:30 [INF] HTTP GET /api/Users responded 200 in 15315.0809 ms
+2025-09-28 13:17:35.865 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=15 - 200 null application/json; charset=utf-8 15347.8943ms
+2025-09-28 13:28:04.222 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_06bf81901c44456e80f5900fc45d7c6c
+2025-09-28 13:28:05.351 +05:30 [INF] Connected to Redis.
+2025-09-28 13:28:41.111 +05:30 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 13:28:42.958 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 13:28:42.979 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 13:28:43.003 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 13:28:43.015 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 13:28:43.027 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 13:28:43.137 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 13:28:43.902 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 13:28:43.905 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 13:28:44.851 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 13:28:44.856 +05:30 [INF] Hosting environment: Development
+2025-09-28 13:28:44.859 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 13:28:48.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 13:28:48.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 13:28:48.686 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 169.3564ms
+2025-09-28 13:28:49.010 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 498.1367ms
+2025-09-28 13:28:49.359 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 13:28:49.585 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 93.7648 ms
+2025-09-28 13:28:49.595 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 235.6741ms
+2025-09-28 13:29:53.361 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 13:29:53.693 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 13:29:53.768 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 13:29:55.158 +05:30 [INF] Executed DbCommand (60ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+ORDER BY u."Username"
+LIMIT @__p_1 OFFSET @__p_0
+2025-09-28 13:29:55.295 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.UserDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 13:29:55.328 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 1541.4966ms
+2025-09-28 13:29:55.331 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 13:29:55.336 +05:30 [INF] HTTP GET /api/Users responded 200 in 1958.2672 ms
+2025-09-28 13:29:55.345 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 200 null application/json; charset=utf-8 1984.9445ms
+2025-09-28 13:48:52.669 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_3c3120519efc480db1d0fa67374b26a7
+2025-09-28 13:48:54.150 +05:30 [INF] Connected to Redis.
+2025-09-28 13:48:57.827 +05:30 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 13:48:58.549 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 13:48:58.561 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 13:48:58.570 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 13:48:58.573 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 13:48:58.581 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 13:48:58.682 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 13:48:59.276 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 13:48:59.279 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 13:48:59.497 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 13:48:59.500 +05:30 [INF] Hosting environment: Development
+2025-09-28 13:48:59.501 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 13:49:02.637 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 13:49:02.637 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 13:49:02.757 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 156.9036ms
+2025-09-28 13:49:02.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 332.5728ms
+2025-09-28 13:49:03.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 13:49:03.522 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 150.6794 ms
+2025-09-28 13:49:03.531 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 465.1692ms
+2025-09-28 13:50:07.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 13:50:08.118 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 13:50:08.188 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 13:50:08.615 +05:30 [ERR] Error retrieving users
+System.Exception: Test exception for logging
+   at ChatBackend.Controllers.UsersController.GetUsers(Int32 page, Int32 pageSize) in D:\Projects\SignalRChatBackend\Controllers\UsersController.cs:line 32
+2025-09-28 13:50:08.637 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-28 13:50:08.649 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 445.6038ms
+2025-09-28 13:50:08.651 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 13:50:08.653 +05:30 [ERR] HTTP GET /api/Users responded 500 in 869.2577 ms
+2025-09-28 13:50:08.659 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 500 null text/plain; charset=utf-8 893.5799ms
+2025-09-28 13:59:52.179 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_22d0046dba624640a5b7bcf9ae935d13
+2025-09-28 13:59:54.296 +05:30 [INF] Connected to Redis.
+2025-09-28 13:59:56.840 +05:30 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 13:59:57.324 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 13:59:57.339 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 13:59:57.350 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 13:59:57.353 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 13:59:57.363 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 13:59:57.454 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 13:59:58.129 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 13:59:58.131 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 13:59:58.472 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 13:59:58.474 +05:30 [INF] Hosting environment: Development
+2025-09-28 13:59:58.477 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 14:00:01.188 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 14:00:01.188 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 14:00:01.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 86.0982ms
+2025-09-28 14:00:01.347 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 182.4348ms
+2025-09-28 14:00:01.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 14:00:01.641 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 74.6513 ms
+2025-09-28 14:00:01.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.7381ms
+2025-09-28 14:02:49.539 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 14:02:50.499 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 14:02:50.788 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 14:02:50.996 +05:30 [INF] new page 1
+2025-09-28 14:02:52.464 +05:30 [INF] Executed DbCommand (206ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+ORDER BY u."Username"
+LIMIT @__p_1 OFFSET @__p_0
+2025-09-28 14:02:52.687 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.UserDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 14:02:52.757 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 1956.5451ms
+2025-09-28 14:02:52.762 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 14:02:52.766 +05:30 [INF] HTTP GET /api/Users responded 200 in 3123.3232 ms
+2025-09-28 14:02:52.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 200 null application/json; charset=utf-8 3240.2933ms
+2025-09-28 21:02:26.546 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_fd9b5ee37e1644f782fefc8674e5b885
+2025-09-28 21:02:27.450 +05:30 [INF] Connected to Redis.
+2025-09-28 21:02:31.256 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 21:02:31.856 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 21:02:31.870 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 21:02:31.877 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 21:02:31.881 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 21:02:31.887 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 21:02:31.965 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 21:02:32.495 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 21:02:32.497 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 21:02:32.681 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 21:02:32.683 +05:30 [INF] Hosting environment: Development
+2025-09-28 21:02:32.686 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 21:02:37.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 21:02:37.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 21:02:38.029 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 161.7096ms
+2025-09-28 21:02:38.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 555.8926ms
+2025-09-28 21:02:38.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 21:02:38.736 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 84.5535 ms
+2025-09-28 21:02:38.747 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.2972ms
+2025-09-28 21:02:57.581 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 21:03:01.378 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:03:01.429 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 21:03:02.724 +05:30 [ERR] Error retrieving users
+System.Exception: Test exception for logging
+   at ChatBackend.Controllers.UsersController.GetUsers(Int32 page, Int32 pageSize) in D:\Projects\SignalRChatBackend\Controllers\UsersController.cs:line 32
+2025-09-28 21:03:02.765 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-28 21:03:02.775 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 1336.2896ms
+2025-09-28 21:03:02.779 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:03:02.780 +05:30 [ERR] HTTP GET /api/Users responded 500 in 5191.4485 ms
+2025-09-28 21:03:02.786 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 500 null text/plain; charset=utf-8 5205.6888ms
+2025-09-28 21:05:58.240 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_98f4eec66cc445e4b6f69e53d38c443a
+2025-09-28 21:05:58.967 +05:30 [INF] Connected to Redis.
+2025-09-28 21:06:01.807 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 21:06:03.129 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 21:06:03.149 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 21:06:03.164 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 21:06:03.168 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 21:06:03.176 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 21:06:03.266 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 21:06:03.707 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 21:06:03.709 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 21:06:03.958 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 21:06:03.961 +05:30 [INF] Hosting environment: Development
+2025-09-28 21:06:03.964 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 21:06:06.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 21:06:06.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 21:06:06.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 134.6143ms
+2025-09-28 21:06:06.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 237.4948ms
+2025-09-28 21:06:06.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 21:06:06.937 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 102.7043 ms
+2025-09-28 21:06:06.953 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 325.8819ms
+2025-09-28 21:06:25.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 21:06:25.961 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:06:26.004 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 21:06:26.444 +05:30 [ERR] Error retrieving users
+System.Exception: Test exception for logging
+   at ChatBackend.Controllers.UsersController.GetUsers(Int32 page, Int32 pageSize) in D:\Projects\SignalRChatBackend\Controllers\UsersController.cs:line 32
+2025-09-28 21:06:26.459 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-28 21:06:26.469 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 454.5419ms
+2025-09-28 21:06:26.472 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:06:26.474 +05:30 [ERR] HTTP GET /api/Users responded 500 in 837.4604 ms
+2025-09-28 21:06:26.482 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 500 null text/plain; charset=utf-8 854.2645ms
+2025-09-28 21:12:41.134 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 21:12:41.156 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:12:41.159 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 21:12:41.229 +05:30 [ERR] Error retrieving users
+System.Exception: Test exception for logging
+   at ChatBackend.Controllers.UsersController.GetUsers(Int32 page, Int32 pageSize) in D:\Projects\SignalRChatBackend\Controllers\UsersController.cs:line 32
+2025-09-28 21:12:41.233 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-28 21:12:41.238 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 75.1938ms
+2025-09-28 21:12:41.241 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:12:41.242 +05:30 [ERR] HTTP GET /api/Users responded 500 in 94.7542 ms
+2025-09-28 21:12:41.245 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 500 null text/plain; charset=utf-8 111.2382ms
+2025-09-28 21:18:00.767 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_88b415e03fed45eeb947689b071daafd
+2025-09-28 21:18:01.369 +05:30 [INF] Connected to Redis.
+2025-09-28 21:18:04.194 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 21:18:04.642 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 21:18:04.662 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 21:18:04.677 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 21:18:04.681 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 21:18:04.691 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 21:18:04.772 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 21:18:05.147 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 21:18:05.149 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 21:18:05.330 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 21:18:05.333 +05:30 [INF] Hosting environment: Development
+2025-09-28 21:18:05.334 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 21:18:06.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 21:18:06.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 21:18:06.746 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 97.9022ms
+2025-09-28 21:18:06.857 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 214.1906ms
+2025-09-28 21:18:06.956 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 21:18:07.213 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 128.6295 ms
+2025-09-28 21:18:07.226 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 270.0277ms
+2025-09-28 21:18:21.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 21:18:21.553 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:18:21.603 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 21:18:21.967 +05:30 [ERR] Error retrieving users
+System.Exception: Test exception for logging
+   at ChatBackend.Controllers.UsersController.GetUsers(Int32 page, Int32 pageSize) in D:\Projects\SignalRChatBackend\Controllers\UsersController.cs:line 32
+2025-09-28 21:18:21.984 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-28 21:18:21.995 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 380.0623ms
+2025-09-28 21:18:21.998 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:18:22.000 +05:30 [ERR] HTTP GET /api/Users responded 500 in 801.5081 ms
+2025-09-28 21:18:22.007 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 500 null text/plain; charset=utf-8 818.9427ms
+2025-09-28 21:23:43.101 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_de7552d52a8d412da61b5a1dd8c6313a
+2025-09-28 21:23:43.629 +05:30 [INF] Connected to Redis.
+2025-09-28 21:23:45.772 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 21:23:46.225 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 21:23:46.236 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 21:23:46.245 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 21:23:46.249 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 21:23:46.257 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 21:23:46.332 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 21:23:46.875 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 21:23:46.878 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 21:23:47.067 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 21:23:47.071 +05:30 [INF] Hosting environment: Development
+2025-09-28 21:23:47.073 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 21:23:48.968 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 21:23:48.969 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 21:23:49.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 948.2317ms
+2025-09-28 21:23:49.973 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1039.2862ms
+2025-09-28 21:23:50.143 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 21:23:50.347 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 76.0547 ms
+2025-09-28 21:23:50.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 222.6515ms
+2025-09-28 21:24:06.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 21:24:06.469 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:24:06.508 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 21:24:06.802 +05:30 [ERR] Error retrieving users
+System.Exception: Test exception for logging
+   at ChatBackend.Controllers.UsersController.GetUsers(Int32 page, Int32 pageSize) in D:\Projects\SignalRChatBackend\Controllers\UsersController.cs:line 32
+2025-09-28 21:24:06.817 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-28 21:24:06.828 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 308.6621ms
+2025-09-28 21:24:06.832 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 21:24:06.835 +05:30 [ERR] HTTP GET /api/Users responded 500 in 705.2074 ms
+2025-09-28 21:24:06.842 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 500 null text/plain; charset=utf-8 722.3157ms
+2025-09-28 22:03:54.871 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-09-28 22:03:55.168 +05:30 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-09-28 22:03:55.243 +05:30 [DBG] Found protocol implementation for requested protocol: json.
+2025-09-28 22:03:55.254 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_c8336b5b64174cd8babfb5e27b35b0b6
+2025-09-28 22:03:55.393 +05:30 [DBG] Connecting (async) on .NET 8.0.20 (StackExchange.Redis: v2.7.27.49176)
+2025-09-28 22:03:55.502 +05:30 [DBG] localhost:6379
+2025-09-28 22:03:55.511 +05:30 [DBG] localhost:6379/Interactive: Connecting...
+2025-09-28 22:03:55.534 +05:30 [DBG] localhost:6379: BeginConnectAsync
+2025-09-28 22:03:55.555 +05:30 [DBG] 1 unique nodes specified (with tiebreaker)
+2025-09-28 22:03:55.582 +05:30 [DBG] localhost:6379/Interactive: Connected 
+2025-09-28 22:03:55.593 +05:30 [DBG] localhost:6379: OnConnectedAsync init (State=Connecting)
+2025-09-28 22:03:55.597 +05:30 [DBG] localhost:6379: Server handshake
+2025-09-28 22:03:55.604 +05:30 [DBG] Allowing 1 endpoint(s) 00:00:05 to respond...
+2025-09-28 22:03:55.621 +05:30 [DBG] Awaiting 1 available task completion(s) for 5000ms, IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=8,Max=32767), POOL: (Threads=5,QueuedItems=0,CompletedItems=22,Timers=5)
+2025-09-28 22:03:55.623 +05:30 [DBG] localhost:6379: Setting client name: DESKTOP-UC6VE2G(SE.Redis-v2.7.27.49176)
+2025-09-28 22:03:55.662 +05:30 [DBG] localhost:6379: Setting client lib/ver
+2025-09-28 22:03:55.689 +05:30 [DBG] localhost:6379: Auto-configuring...
+2025-09-28 22:03:55.694 +05:30 [DBG] localhost:6379: Requesting tie-break (Key="__Booksleeve_TieBreak")...
+2025-09-28 22:03:55.705 +05:30 [DBG] localhost:6379/Interactive: Writing: GET __Booksleeve_TieBreak
+2025-09-28 22:03:55.709 +05:30 [DBG] localhost:6379: Sending critical tracer (handshake): ECHO
+2025-09-28 22:03:55.711 +05:30 [DBG] localhost:6379/Interactive: Writing: ECHO
+2025-09-28 22:03:55.713 +05:30 [DBG] localhost:6379: Flushing outbound buffer
+2025-09-28 22:03:55.716 +05:30 [DBG] localhost:6379: OnEstablishingAsync complete
+2025-09-28 22:03:55.722 +05:30 [DBG] localhost:6379: Starting read
+2025-09-28 22:03:55.732 +05:30 [DBG] localhost:6379: Auto-configured (CLIENT) connection-id: 128
+2025-09-28 22:03:55.775 +05:30 [DBG] localhost:6379: Auto-configured (CONFIG) read-only replica: true
+2025-09-28 22:03:55.785 +05:30 [DBG] localhost:6379: Auto-configured (CONFIG) databases: 16
+2025-09-28 22:03:55.789 +05:30 [DBG] localhost:6379: Auto-configured (INFO) role: primary
+2025-09-28 22:03:55.792 +05:30 [DBG] localhost:6379: Auto-configured (INFO) version: 7.4.5
+2025-09-28 22:03:55.796 +05:30 [DBG] localhost:6379: Auto-configured (INFO) server-type: Standalone
+2025-09-28 22:03:55.799 +05:30 [DBG] Response from localhost:6379/Interactive / GET __Booksleeve_TieBreak: (null)
+2025-09-28 22:03:55.802 +05:30 [DBG] Response from localhost:6379/Interactive / ECHO: BulkString: 16 bytes
+2025-09-28 22:03:55.804 +05:30 [DBG] localhost:6379: OnConnectedAsync completed (From command: ECHO)
+2025-09-28 22:03:55.806 +05:30 [DBG] All 1 available tasks completed cleanly, IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=8,Max=32767), POOL: (Threads=5,QueuedItems=0,CompletedItems=31,Timers=4)
+2025-09-28 22:03:55.809 +05:30 [DBG] Endpoint summary:
+2025-09-28 22:03:55.813 +05:30 [DBG]   localhost:6379: Endpoint is (Interactive: ConnectedEstablished, Subscription: ConnectedEstablished)
+2025-09-28 22:03:55.815 +05:30 [DBG] Task summary:
+2025-09-28 22:03:55.818 +05:30 [DBG]   localhost:6379: Returned with success as Standalone primary (Source: From command: ECHO)
+2025-09-28 22:03:55.822 +05:30 [DBG] Election summary:
+2025-09-28 22:03:55.825 +05:30 [DBG]   Election: localhost:6379 had no tiebreaker set
+2025-09-28 22:03:55.827 +05:30 [DBG]   Election: Single primary detected: localhost:6379
+2025-09-28 22:03:55.831 +05:30 [DBG] localhost:6379: Clearing as RedundantPrimary
+2025-09-28 22:03:55.839 +05:30 [DBG] Endpoint Summary:
+2025-09-28 22:03:55.841 +05:30 [DBG]   localhost:6379: Standalone v7.4.5, primary; 16 databases; keep-alive: 00:01:00; int: ConnectedEstablished; sub: ConnectedEstablished, 1 active
+2025-09-28 22:03:55.848 +05:30 [DBG]   localhost:6379: int ops=13, qu=0, qs=0, qc=0, wr=0, socks=1; sub ops=6, qu=0, qs=0, qc=0, wr=0, subs=1, socks=1
+2025-09-28 22:03:55.863 +05:30 [DBG]   localhost:6379: Circular op-count snapshot; int: 0+13=13 (1.30 ops/s; spans 10s); sub: 0+6=6 (0.60 ops/s; spans 10s)
+2025-09-28 22:03:55.866 +05:30 [DBG] Sync timeouts: 0; async timeouts: 0; fire and forget: 0; last heartbeat: -1s ago
+2025-09-28 22:03:55.868 +05:30 [DBG] Starting heartbeat...
+2025-09-28 22:03:55.871 +05:30 [DBG] Total connect time: 539 ms
+2025-09-28 22:03:55.887 +05:30 [INF] Connected to Redis.
+2025-09-28 22:03:56.563 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-09-28 22:03:57.671 +05:30 [DBG] The index {'ConversationId'} was not created on entity type 'Message' as the properties are already covered by the index {'ConversationId', 'CreatedAt'}.
+2025-09-28 22:03:57.674 +05:30 [DBG] The index {'MessageId'} was not created on entity type 'MessageStatus' as the properties are already covered by the index {'MessageId', 'UserId'}.
+2025-09-28 22:03:57.678 +05:30 [DBG] The index {'UserId'} was not created on entity type 'UserConversation' as the properties are already covered by the index {'UserId', 'ConversationId'}.
+2025-09-28 22:03:58.129 +05:30 [DBG] Entity Framework Core 9.0.9 initialized 'ChatDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-09-28 22:03:58.221 +05:30 [DBG] Creating DbConnection.
+2025-09-28 22:03:58.404 +05:30 [DBG] Created DbConnection. (206ms).
+2025-09-28 22:03:58.410 +05:30 [DBG] Opening connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:58.848 +05:30 [DBG] Opened connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:58.854 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-28 22:03:58.865 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (8ms).
+2025-09-28 22:03:58.869 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (14ms).
+2025-09-28 22:03:58.881 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 22:03:58.912 +05:30 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 22:03:58.974 +05:30 [DBG] Closing data reader to 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:58.987 +05:30 [DBG] A data reader for 'chatbackend' on server 'tcp://localhost:5432' is being disposed after spending 65ms reading results.
+2025-09-28 22:03:58.994 +05:30 [DBG] Closing connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.002 +05:30 [DBG] Closed connection to database 'chatbackend' on server 'tcp://localhost:5432' (8ms).
+2025-09-28 22:03:59.177 +05:30 [DBG] Migrating using database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.188 +05:30 [DBG] Opening connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.195 +05:30 [DBG] Opening connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.291 +05:30 [DBG] Opened connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.295 +05:30 [DBG] Closing connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.302 +05:30 [DBG] Closed connection to database 'chatbackend' on server 'tcp://localhost:5432' (7ms).
+2025-09-28 22:03:59.306 +05:30 [DBG] Opening connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.309 +05:30 [DBG] Opened connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.392 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-28 22:03:59.394 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-09-28 22:03:59.396 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+2025-09-28 22:03:59.400 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 22:03:59.450 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-28 22:03:59.464 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-09-28 22:03:59.471 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-09-28 22:03:59.475 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-28 22:03:59.477 +05:30 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-28 22:03:59.479 +05:30 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-09-28 22:03:59.482 +05:30 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+2025-09-28 22:03:59.484 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 22:03:59.703 +05:30 [INF] Executed DbCommand (219ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-28 22:03:59.708 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-28 22:03:59.709 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-28 22:03:59.711 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-09-28 22:03:59.712 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 22:03:59.716 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-28 22:03:59.720 +05:30 [DBG] Closing data reader to 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.721 +05:30 [DBG] A data reader for 'chatbackend' on server 'tcp://localhost:5432' is being disposed after spending 1ms reading results.
+2025-09-28 22:03:59.729 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-28 22:03:59.733 +05:30 [DBG] Committing transaction.
+2025-09-28 22:03:59.743 +05:30 [DBG] Committed transaction.
+2025-09-28 22:03:59.746 +05:30 [DBG] Disposing transaction.
+2025-09-28 22:03:59.748 +05:30 [DBG] Closing connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.751 +05:30 [DBG] Closed connection to database 'chatbackend' on server 'tcp://localhost:5432' (3ms).
+2025-09-28 22:03:59.755 +05:30 [DBG] 'ChatDbContext' disposed.
+2025-09-28 22:03:59.759 +05:30 [DBG] Disposing connection to database 'chatbackend' on server 'tcp://localhost:5432'.
+2025-09-28 22:03:59.762 +05:30 [DBG] Disposed connection to database 'chatbackend' on server 'tcp://localhost:5432' (2ms).
+2025-09-28 22:03:59.767 +05:30 [DBG] Hosting starting
+2025-09-28 22:03:59.839 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-28 22:03:59.859 +05:30 [DBG] Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-1b108ad7-8a17-4bb2-9ce2-0001f82d4103.xml'.
+2025-09-28 22:03:59.920 +05:30 [DBG] Found key {1b108ad7-8a17-4bb2-9ce2-0001f82d4103}.
+2025-09-28 22:03:59.949 +05:30 [DBG] Considering key {1b108ad7-8a17-4bb2-9ce2-0001f82d4103} with expiration date 2025-12-19 14:28:49Z as default key.
+2025-09-28 22:03:59.956 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-28 22:03:59.959 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2025-09-28 22:03:59.963 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-28 22:03:59.967 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-09-28 22:03:59.971 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-09-28 22:03:59.976 +05:30 [DBG] Using key {1b108ad7-8a17-4bb2-9ce2-0001f82d4103} as the default key.
+2025-09-28 22:03:59.979 +05:30 [DBG] Key ring with default key {1b108ad7-8a17-4bb2-9ce2-0001f82d4103} was loaded during application startup.
+2025-09-28 22:03:59.997 +05:30 [DBG] Middleware loaded
+2025-09-28 22:04:00.001 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16507 B).
+2025-09-28 22:04:00.007 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-09-28 22:04:00.189 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-09-28 22:04:00.329 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-28 22:04:00.331 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-28 22:04:00.333 +05:30 [DBG] Loaded hosting startup assembly ChatBackend
+2025-09-28 22:04:00.334 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-09-28 22:04:00.335 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-09-28 22:04:00.337 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-09-28 22:04:00.398 +05:30 [DBG] Connection id "0HNFULJA2ODAP" accepted.
+2025-09-28 22:04:00.401 +05:30 [DBG] Connection id "0HNFULJA2ODAP" started.
+2025-09-28 22:04:00.423 +05:30 [DBG] Connection id "0HNFULJA2ODAP" received FIN.
+2025-09-28 22:04:00.446 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-09-28 22:04:00.554 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 22:04:00.572 +05:30 [INF] Hosting environment: Development
+2025-09-28 22:04:00.574 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-28 22:04:00.582 +05:30 [DBG] Connection id "0HNFULJA2ODAP" stopped.
+2025-09-28 22:04:00.587 +05:30 [DBG] Connection id "0HNFULJA2ODAP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-28 22:04:00.592 +05:30 [DBG] Hosting started
+2025-09-28 22:04:02.098 +05:30 [DBG] Connection id "0HNFULJA2ODAQ" accepted.
+2025-09-28 22:04:02.121 +05:30 [DBG] Connection id "0HNFULJA2ODAQ" started.
+2025-09-28 22:04:02.531 +05:30 [DBG] Connection 0HNFULJA2ODAQ established using the following protocol: "Tls13"
+2025-09-28 22:04:02.791 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 22:04:02.791 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-28 22:04:02.892 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-09-28 22:04:02.912 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 149.5062ms
+2025-09-28 22:04:03.061 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 300.8497ms
+2025-09-28 22:04:03.225 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-28 22:04:03.248 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-09-28 22:04:03.322 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-09-28 22:04:03.326 +05:30 [DBG] Request did not match any endpoints
+2025-09-28 22:04:03.416 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 83.1090 ms
+2025-09-28 22:04:03.430 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 205.6238ms
+2025-09-28 22:04:04.819 +05:30 [DBG] Connection id "0HNFULJA2ODAQ" received FIN.
+2025-09-28 22:04:04.828 +05:30 [DBG] Connection id "0HNFULJA2ODAQ" is closed. The last processed stream ID was 5.
+2025-09-28 22:04:04.828 +05:30 [DBG] The connection queue processing loop for 0HNFULJA2ODAQ completed.
+2025-09-28 22:04:04.831 +05:30 [DBG] Connection id "0HNFULJA2ODAQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-28 22:04:04.848 +05:30 [DBG] Connection id "0HNFULJA2ODAQ" stopped.
+2025-09-28 22:05:03.793 +05:30 [DBG] Connection id "0HNFULJA2ODAR" accepted.
+2025-09-28 22:05:03.798 +05:30 [DBG] Connection id "0HNFULJA2ODAR" started.
+2025-09-28 22:05:03.828 +05:30 [DBG] Connection 0HNFULJA2ODAR established using the following protocol: "Tls13"
+2025-09-28 22:05:03.837 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - null null
+2025-09-28 22:05:03.847 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Users'
+2025-09-28 22:05:03.850 +05:30 [DBG] Endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)' with route pattern 'api/Users' is valid for the request path '/api/Users'
+2025-09-28 22:05:03.856 +05:30 [DBG] Request matched endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 22:05:04.171 +05:30 [DBG] Successfully validated the token.
+2025-09-28 22:05:04.175 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-09-28 22:05:04.188 +05:30 [DBG] Authorization was successful.
+2025-09-28 22:05:04.192 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 22:05:04.254 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-28 22:05:04.260 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-09-28 22:05:04.262 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-09-28 22:05:04.265 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-09-28 22:05:04.271 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-09-28 22:05:04.274 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-09-28 22:05:04.280 +05:30 [DBG] Executing controller factory for controller ChatBackend.Controllers.UsersController (ChatBackend)
+2025-09-28 22:05:04.284 +05:30 [DBG] Executed controller factory for controller ChatBackend.Controllers.UsersController (ChatBackend)
+2025-09-28 22:05:04.297 +05:30 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' ...
+2025-09-28 22:05:04.303 +05:30 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' using the name 'page' in request data ...
+2025-09-28 22:05:04.307 +05:30 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2025-09-28 22:05:04.310 +05:30 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2025-09-28 22:05:04.313 +05:30 [DBG] Attempting to validate the bound parameter 'page' of type 'System.Int32' ...
+2025-09-28 22:05:04.319 +05:30 [DBG] Done attempting to validate the bound parameter 'page' of type 'System.Int32'.
+2025-09-28 22:05:04.323 +05:30 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2025-09-28 22:05:04.325 +05:30 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name 'pageSize' in request data ...
+2025-09-28 22:05:04.329 +05:30 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2025-09-28 22:05:04.332 +05:30 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2025-09-28 22:05:04.334 +05:30 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2025-09-28 22:05:04.338 +05:30 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2025-09-28 22:05:04.344 +05:30 [INF] Retrieving users
+2025-09-28 22:05:04.506 +05:30 [ERR] Error retrieving users applogger
+System.Exception: Test exception for logging
+   at ChatBackend.Controllers.UsersController.GetUsers(Int32 page, Int32 pageSize) in D:\Projects\SignalRChatBackend\Controllers\UsersController.cs:line 32
+2025-09-28 22:05:04.596 +05:30 [ERR] Error retrieving users
+System.Exception: Test exception for logging
+   at ChatBackend.Controllers.UsersController.GetUsers(Int32 page, Int32 pageSize) in D:\Projects\SignalRChatBackend\Controllers\UsersController.cs:line 32
+2025-09-28 22:05:04.605 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-09-28 22:05:04.612 +05:30 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-09-28 22:05:04.617 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-09-28 22:05:04.621 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-28 22:05:04.628 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 348.1091ms
+2025-09-28 22:05:04.630 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-28 22:05:04.632 +05:30 [ERR] HTTP GET /api/Users responded 500 in 772.1436 ms
+2025-09-28 22:05:04.639 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=20 - 500 null text/plain; charset=utf-8 804.1724ms
+2025-09-28 22:05:04.873 +05:30 [DBG] Connection id "0HNFULJA2ODAR" received FIN.
+2025-09-28 22:05:04.878 +05:30 [DBG] Connection id "0HNFULJA2ODAR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-28 22:05:04.878 +05:30 [DBG] Connection id "0HNFULJA2ODAR" is closed. The last processed stream ID was 1.
+2025-09-28 22:05:04.887 +05:30 [DBG] The connection queue processing loop for 0HNFULJA2ODAR completed.
+2025-09-28 22:05:04.890 +05:30 [DBG] Connection id "0HNFULJA2ODAR" stopped.

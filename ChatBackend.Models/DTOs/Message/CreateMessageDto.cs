@@ -1,0 +1,25 @@
+﻿using ChatBackend.Models.Enums;
+
+namespace ChatBackend.Models.DTOs.Message
+{
+    public class CreateMessageDto
+    {
+        public Guid Id { get; set; }
+        public Guid ConversationId { get; set; }
+        public Guid SenderId { get; set; }
+        public string SenderUsername { get; set; } = string.Empty;
+        public string? SenderAvatarUrl { get; set; }
+        public MessageType Type { get; set; }
+        public string? Content { get; set; }
+        public string? FileUrl { get; set; }
+        public string? FileName { get; set; }
+        public string? ContentType { get; set; }
+        public long? FileSize { get; set; }
+        public Guid? ReplyToMessageId { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+        public bool IsDeleted { get; set; }
+        public List<MessageStatusDto> MessageStatuses { get; set; } = new();
+        public MessageDto? ReplyToMessage { get; set; }
+    }
+}

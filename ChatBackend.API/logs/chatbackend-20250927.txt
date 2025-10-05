@@ -1,0 +1,93 @@
+2025-09-27 14:01:54.165 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_1c5fe6bfb96649c4ba45e63db51576f4
+2025-09-27 14:02:02.253 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-27 14:02:02.732 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-27 14:02:02.752 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-27 14:02:02.766 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-27 14:02:02.771 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-27 14:02:02.780 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-27 14:02:02.896 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-27 14:02:03.545 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert
+2025-09-27 14:02:03.649 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-27 14:02:03.652 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-27 14:02:03.795 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-27 14:02:03.797 +05:30 [INF] Hosting environment: Development
+2025-09-27 14:02:03.799 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-27 14:02:04.044 +05:30 [ERR] Error connecting to Redis.
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter writer, Nullable`1 serverType) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 620
+   at Microsoft.AspNetCore.SignalR.StackExchangeRedis.RedisOptions.ConnectAsync(TextWriter log)
+   at Microsoft.AspNetCore.SignalR.StackExchangeRedis.RedisHubLifetimeManager`1.EnsureRedisServerConnection()
+2025-09-27 14:05:18.327 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_7ac1ae76600c4e508ad4558709157546
+2025-09-27 14:05:21.999 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-27 14:05:22.431 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-27 14:05:22.449 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-27 14:05:22.457 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-27 14:05:22.463 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-27 14:05:22.472 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-27 14:05:22.577 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-27 14:05:23.151 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-27 14:05:23.154 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-27 14:05:23.331 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-27 14:05:23.333 +05:30 [INF] Hosting environment: Development
+2025-09-27 14:05:23.336 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-27 14:05:27.321 +05:30 [ERR] Error connecting to Redis.
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter writer, Nullable`1 serverType) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 620
+   at Microsoft.AspNetCore.SignalR.StackExchangeRedis.RedisOptions.ConnectAsync(TextWriter log)
+   at Microsoft.AspNetCore.SignalR.StackExchangeRedis.RedisHubLifetimeManager`1.EnsureRedisServerConnection()
+2025-09-27 17:11:11.803 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_6ae25fe6505c48d2be13673788eb3acb
+2025-09-27 17:11:14.530 +05:30 [INF] Connected to Redis.
+2025-09-27 17:11:21.411 +05:30 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-27 17:11:22.395 +05:30 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-27 17:11:22.427 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-27 17:11:22.445 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-27 17:11:22.451 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-27 17:11:22.466 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-27 17:11:23.442 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-27 17:11:24.373 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-27 17:11:24.376 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-27 17:11:24.668 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-27 17:11:24.671 +05:30 [INF] Hosting environment: Development
+2025-09-27 17:11:24.674 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-27 17:11:30.768 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-27 17:11:30.768 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-27 17:11:30.902 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 181.4243ms
+2025-09-27 17:11:31.367 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 650.7347ms
+2025-09-27 17:11:31.556 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-27 17:11:32.522 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 967.7396ms

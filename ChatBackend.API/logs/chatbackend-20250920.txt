@@ -1,0 +1,1716 @@
+2025-09-20 08:19:08.522 +00:00 [INF] Connecting to Redis endpoints: redis:6379. Using Server Name: 1fa74eaccef8_8db1ffa6fa1a437a8c983748aca0fffe
+2025-09-20 08:19:09.425 +00:00 [INF] Connected to Redis.
+2025-09-20 08:19:45.029 +00:00 [INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 08:19:46.897 +00:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 08:19:46.924 +00:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 08:19:46.952 +00:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 08:19:46.958 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 08:19:46.974 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 08:19:47.053 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-09-20 08:19:47.056 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 08:19:47.190 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2025-09-20 08:19:47.407 +00:00 [INF] Now listening on: http://[::]:8080
+2025-09-20 08:19:47.409 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 08:19:47.412 +00:00 [INF] Hosting environment: Development
+2025-09-20 08:19:47.414 +00:00 [INF] Content root path: /app
+2025-09-20 08:20:14.863 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:20:14.940 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-09-20 08:20:15.003 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:20:15.203 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:20:15.211 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 348.9868ms
+2025-09-20 08:20:45.307 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:20:45.312 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:20:45.459 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:20:45.460 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 153.3815ms
+2025-09-20 08:21:17.408 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:21:17.413 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:21:17.494 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:21:17.496 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 87.7728ms
+2025-09-20 08:21:50.341 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:21:50.344 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:21:50.460 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:21:50.461 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 119.4449ms
+2025-09-20 08:22:22.927 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:22:22.929 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:22:23.093 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:22:23.094 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 166.813ms
+2025-09-20 08:22:56.049 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:22:56.050 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:22:56.130 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:22:56.132 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 82.7116ms
+2025-09-20 08:23:28.970 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:23:28.971 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:23:29.044 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:23:29.045 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 75.713ms
+2025-09-20 08:24:01.878 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:24:01.879 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:24:01.975 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:24:01.977 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 98.4483ms
+2025-09-20 08:24:35.022 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:24:35.024 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:24:35.140 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:24:35.142 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 119.6289ms
+2025-09-20 08:25:04.129 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-09-20 08:25:04.135 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 5.6148ms
+2025-09-20 08:25:04.149 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2025-09-20 08:25:08.015 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:25:08.021 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:25:08.219 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:25:08.220 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 205.0309ms
+2025-09-20 08:25:51.865 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:25:51.868 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:25:52.083 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:25:52.086 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 220.7214ms
+2025-09-20 08:26:27.248 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:26:27.250 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:26:27.355 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:26:27.358 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 108.2639ms
+2025-09-20 08:26:57.465 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:26:57.466 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:26:57.552 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:26:57.554 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 88.7118ms
+2025-09-20 08:27:28.871 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:27:28.873 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:27:28.975 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:27:28.976 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 104.6265ms
+2025-09-20 08:28:01.826 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:28:01.827 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:28:01.925 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:28:01.927 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 100.9386ms
+2025-09-20 08:28:34.571 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:28:34.573 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:28:34.650 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:28:34.651 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 79.9291ms
+2025-09-20 08:29:02.466 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/health - null null
+2025-09-20 08:29:02.468 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:29:05.678 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:29:05.679 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/health - 200 null text/plain 108.4052ms
+2025-09-20 08:29:05.772 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2025-09-20 08:29:05.776 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 4.336ms
+2025-09-20 08:29:05.777 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+2025-09-20 08:29:07.478 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:29:07.479 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:29:07.594 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:29:07.595 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 117.2424ms
+2025-09-20 08:29:21.387 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-09-20 08:29:21.394 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 7.5104ms
+2025-09-20 08:29:21.397 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2025-09-20 08:29:40.552 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:29:40.553 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:29:40.623 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:29:40.624 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 71.5222ms
+2025-09-20 08:30:13.500 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:30:13.502 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:30:13.594 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:30:13.596 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 95.6252ms
+2025-09-20 08:30:46.420 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:30:46.423 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:30:46.619 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:30:46.620 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 200.0356ms
+2025-09-20 08:31:07.340 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat - null null
+2025-09-20 08:31:07.441 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 08:31:07.460 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 08:31:07.461 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat - 401 0 null 121.4941ms
+2025-09-20 08:31:19.469 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:31:19.470 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:31:19.687 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:31:19.688 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 219.2041ms
+2025-09-20 08:31:52.546 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:31:52.555 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:31:52.690 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:31:52.692 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 146.3341ms
+2025-09-20 08:32:25.572 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:32:25.573 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:32:25.693 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:32:25.696 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 125.7446ms
+2025-09-20 08:32:58.630 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:32:58.642 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:32:58.912 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:32:58.916 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 286.7909ms
+2025-09-20 08:33:31.794 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:33:31.797 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:33:31.896 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:33:31.897 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 103.3706ms
+2025-09-20 08:34:04.776 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:34:04.817 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:34:04.949 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:34:04.952 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 176.4305ms
+2025-09-20 08:34:37.831 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:34:37.842 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:34:37.936 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:34:37.938 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 106.352ms
+2025-09-20 08:35:10.798 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:35:10.801 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:35:10.917 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:35:10.918 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 119.8882ms
+2025-09-20 08:35:43.780 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:35:43.788 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:35:43.988 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:35:43.989 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 209.6517ms
+2025-09-20 08:36:04.878 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-09-20 08:36:04.880 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 2.1805ms
+2025-09-20 08:36:04.883 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2025-09-20 08:36:16.854 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:36:16.857 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:36:17.075 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:36:17.077 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 222.2538ms
+2025-09-20 08:36:25.731 +00:00 [INF] Application is shutting down...
+2025-09-20 08:37:33.152 +00:00 [INF] Connecting to Redis endpoints: redis:6379. Using Server Name: c0db65d8359d_ab9e0263c2d8402d9a61c9af890e49df
+2025-09-20 08:37:33.647 +00:00 [INF] Connected to Redis.
+2025-09-20 08:37:35.476 +00:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 08:37:35.966 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 08:37:35.979 +00:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 08:37:35.991 +00:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 08:37:35.995 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 08:37:36.003 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 08:37:36.090 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-09-20 08:37:36.091 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 08:37:36.113 +00:00 [INF] Creating key {46fb8cfc-ceb0-4a13-b3a2-ffeae41a85c9} with creation date 2025-09-20 08:37:36Z, activation date 2025-09-20 08:37:36Z, and expiration date 2025-12-19 08:37:36Z.
+2025-09-20 08:37:36.153 +00:00 [WRN] No XML encryptor configured. Key {46fb8cfc-ceb0-4a13-b3a2-ffeae41a85c9} may be persisted to storage in unencrypted form.
+2025-09-20 08:37:36.169 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-46fb8cfc-ceb0-4a13-b3a2-ffeae41a85c9.xml'.
+2025-09-20 08:37:36.208 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2025-09-20 08:37:36.321 +00:00 [INF] Now listening on: http://[::]:8080
+2025-09-20 08:37:36.323 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 08:37:36.325 +00:00 [INF] Hosting environment: Development
+2025-09-20 08:37:36.326 +00:00 [INF] Content root path: /app
+2025-09-20 08:37:36.391 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:37:36.481 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-09-20 08:37:36.540 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:37:36.716 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:37:36.720 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 332.1836ms
+2025-09-20 08:37:44.668 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/health - null null
+2025-09-20 08:37:44.694 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:37:45.186 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:37:45.190 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/health - 200 null text/plain 520.642ms
+2025-09-20 08:37:50.235 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat - null null
+2025-09-20 08:37:50.271 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 08:37:50.280 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 08:37:50.281 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat - 401 0 null 46.3451ms
+2025-09-20 08:37:53.406 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-09-20 08:37:53.412 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 6.166ms
+2025-09-20 08:37:53.415 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2025-09-20 08:38:05.511 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger - null null
+2025-09-20 08:38:05.517 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger - 301 0 null 6.8269ms
+2025-09-20 08:38:05.537 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-09-20 08:38:05.712 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 174.8337ms
+2025-09-20 08:38:05.756 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2025-09-20 08:38:05.760 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.css - null null
+2025-09-20 08:38:05.767 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+2025-09-20 08:38:05.772 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-20 08:38:05.783 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.js - null null
+2025-09-20 08:38:05.784 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.js - 200 null application/javascript;charset=utf-8 1.8218ms
+2025-09-20 08:38:05.820 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.css - 200 152 text/css 59.6338ms
+2025-09-20 08:38:05.821 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 23647 text/css 64.1189ms
+2025-09-20 08:38:05.846 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 70860 text/javascript 74.0373ms
+2025-09-20 08:38:05.855 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 417980 text/javascript 87.4971ms
+2025-09-20 08:38:06.138 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-09-20 08:38:06.237 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2025-09-20 08:38:06.240 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 3.2911ms
+2025-09-20 08:38:06.421 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 282.9313ms
+2025-09-20 08:38:09.721 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:38:09.723 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:38:09.819 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:38:09.821 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 99.0892ms
+2025-09-20 08:38:42.679 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:38:42.680 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:38:42.762 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:38:42.763 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 83.7089ms
+2025-09-20 08:39:15.596 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:39:15.597 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:39:15.682 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:39:15.684 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 87.5192ms
+2025-09-20 08:39:48.526 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:39:48.527 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:39:48.601 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:39:48.603 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 76.7799ms
+2025-09-20 08:40:21.468 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:40:21.470 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:40:21.656 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:40:21.658 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 190.0692ms
+2025-09-20 08:40:54.853 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:40:54.855 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:40:54.994 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:40:54.996 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 142.5911ms
+2025-09-20 08:41:27.915 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:41:27.917 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:41:28.060 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:41:28.062 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 146.3377ms
+2025-09-20 08:42:00.939 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:42:00.946 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:42:01.082 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:42:01.083 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 144.0819ms
+2025-09-20 08:42:34.066 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:42:34.077 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:42:34.224 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:42:34.225 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 158.9337ms
+2025-09-20 08:43:07.361 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:43:07.368 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:43:07.458 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:43:07.459 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 98.5215ms
+2025-09-20 08:43:40.835 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:43:40.840 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:43:40.988 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:43:40.989 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 154.2566ms
+2025-09-20 08:44:14.044 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:44:14.052 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:44:14.135 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:44:14.136 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 92.5235ms
+2025-09-20 08:44:47.032 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:44:47.036 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:44:47.156 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:44:47.158 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 126.5804ms
+2025-09-20 08:45:20.120 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:45:20.128 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:45:20.336 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:45:20.338 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 217.7598ms
+2025-09-20 08:45:34.893 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat - null null
+2025-09-20 08:45:34.969 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 08:45:34.975 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 08:45:34.977 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat - 401 0 null 83.3379ms
+2025-09-20 08:45:53.252 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 08:45:53.253 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 08:45:53.384 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 08:45:53.385 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 133.525ms
+2025-09-20 08:46:20.693 +00:00 [INF] Application is shutting down...
+2025-09-20 12:24:13.680 +00:00 [INF] Connecting to Redis endpoints: redis:6379. Using Server Name: f1787c82d574_2cf0446f8b174b7c81ec8305f94b8eb2
+2025-09-20 12:24:14.156 +00:00 [INF] Connected to Redis.
+2025-09-20 12:24:16.213 +00:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 12:24:16.983 +00:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 12:24:16.998 +00:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 12:24:17.009 +00:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 12:24:17.015 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 12:24:17.025 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 12:24:17.078 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-09-20 12:24:17.080 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 12:24:17.112 +00:00 [INF] Creating key {8c47b413-9601-40ea-8c4b-d93eb2f45cbd} with creation date 2025-09-20 12:24:17Z, activation date 2025-09-20 12:24:17Z, and expiration date 2025-12-19 12:24:17Z.
+2025-09-20 12:24:17.131 +00:00 [WRN] No XML encryptor configured. Key {8c47b413-9601-40ea-8c4b-d93eb2f45cbd} may be persisted to storage in unencrypted form.
+2025-09-20 12:24:17.147 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-8c47b413-9601-40ea-8c4b-d93eb2f45cbd.xml'.
+2025-09-20 12:24:17.176 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2025-09-20 12:24:17.272 +00:00 [INF] Now listening on: http://[::]:8080
+2025-09-20 12:24:17.274 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 12:24:17.275 +00:00 [INF] Hosting environment: Development
+2025-09-20 12:24:17.277 +00:00 [INF] Content root path: /app
+2025-09-20 12:24:17.515 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:24:17.610 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-09-20 12:24:17.676 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:24:17.931 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:24:17.939 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 426.8185ms
+2025-09-20 12:24:50.862 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:24:50.877 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:24:51.084 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:24:51.087 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 224.7274ms
+2025-09-20 12:25:23.696 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:25:23.706 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:25:23.934 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:25:23.937 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 241.3418ms
+2025-09-20 12:25:56.798 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:25:56.800 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:25:57.013 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:25:57.015 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 217.1365ms
+2025-09-20 12:26:29.893 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:26:29.895 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:26:30.004 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:26:30.007 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 112.9146ms
+2025-09-20 12:27:02.881 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:27:02.884 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:27:03.110 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:27:03.114 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 233.3961ms
+2025-09-20 12:27:36.010 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:27:36.012 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:27:36.155 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:27:36.158 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 148.2235ms
+2025-09-20 12:28:09.062 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:28:09.065 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:28:09.192 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:28:09.194 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 131.7425ms
+2025-09-20 12:28:42.064 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:28:42.067 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:28:42.206 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:28:42.212 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 147.8169ms
+2025-09-20 12:29:15.116 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:29:15.120 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:29:15.233 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:29:15.235 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 119.0059ms
+2025-09-20 12:29:48.086 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:29:48.087 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:29:48.202 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:29:48.203 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 117.8529ms
+2025-09-20 12:30:21.061 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:30:21.063 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:30:21.268 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:30:21.270 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 208.705ms
+2025-09-20 12:30:54.151 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:30:54.153 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:30:53.651 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:30:53.653 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 141.6575ms
+2025-09-20 12:31:26.494 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:31:26.496 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:31:26.602 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:31:26.603 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 109.2566ms
+2025-09-20 12:32:06.080 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:32:06.085 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:32:06.216 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:32:06.218 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 137.6617ms
+2025-09-20 12:32:39.132 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:32:39.135 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:32:39.290 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:32:39.293 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 160.5979ms
+2025-09-20 12:33:12.182 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:33:12.184 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:33:12.369 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:33:12.371 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 188.4092ms
+2025-09-20 12:33:41.545 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/health - null null
+2025-09-20 12:33:41.547 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:33:41.682 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:33:41.685 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/health - 200 null text/plain 140.1887ms
+2025-09-20 12:33:41.766 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2025-09-20 12:33:41.768 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 1.4021ms
+2025-09-20 12:33:41.772 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+2025-09-20 12:33:45.502 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:33:45.507 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:33:45.682 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:33:45.685 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 183.1458ms
+2025-09-20 12:33:48.672 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-09-20 12:33:49.114 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 441.6135ms
+2025-09-20 12:34:18.602 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:34:18.604 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:34:18.709 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:34:18.711 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 108.8691ms
+2025-09-20 12:34:52.057 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:34:52.059 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:34:52.166 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:34:52.167 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 109.8602ms
+2025-09-20 12:35:25.052 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:35:25.053 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:35:25.145 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:35:25.146 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 93.5918ms
+2025-09-20 12:35:26.583 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat - null null
+2025-09-20 12:35:26.592 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 12:35:26.603 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 12:35:26.604 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat - 401 0 null 20.8607ms
+2025-09-20 12:35:58.078 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:35:58.080 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:35:58.198 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:35:58.206 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 128.8061ms
+2025-09-20 12:36:13.481 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/generate-token - application/json 69
+2025-09-20 12:36:13.495 +00:00 [INF] CORS policy execution successful.
+2025-09-20 12:36:13.498 +00:00 [INF] Executing endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 12:36:13.572 +00:00 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(ChatBackend.Controllers.TokenRequest) on controller ChatBackend.Controllers.AuthController (ChatBackend).
+2025-09-20 12:36:13.753 +00:00 [INF] Generated test token for user: string
+2025-09-20 12:36:13.759 +00:00 [INF] Executing OkObjectResult, writing value of type 'ChatBackend.Controllers.TokenResponse'.
+2025-09-20 12:36:13.795 +00:00 [INF] Executed action ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend) in 216.4902ms
+2025-09-20 12:36:13.796 +00:00 [INF] Executed endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 12:36:13.797 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/generate-token - 200 null application/json; charset=utf-8 315.7161ms
+2025-09-20 12:36:31.083 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:36:31.084 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:36:31.162 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:36:31.163 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 80.0747ms
+2025-09-20 12:37:04.030 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:37:04.031 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:37:04.130 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:37:04.131 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 101.2847ms
+2025-09-20 12:37:37.012 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:37:37.024 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:37:37.255 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:37:37.257 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 244.4468ms
+2025-09-20 12:38:10.156 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:38:10.158 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:38:10.279 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:38:10.281 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 124.2969ms
+2025-09-20 12:38:43.146 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:38:43.148 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:38:43.267 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:38:43.269 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 122.6511ms
+2025-09-20 12:39:16.137 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:39:16.141 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:39:16.230 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:39:16.231 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 94.1378ms
+2025-09-20 12:39:49.096 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:39:49.097 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:39:49.211 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:39:49.212 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 116.909ms
+2025-09-20 12:39:55.265 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat - null null
+2025-09-20 12:39:55.332 +00:00 [INF] Executing endpoint '/hubs/chat'
+2025-09-20 12:40:10.396 +00:00 [INF] Executed endpoint '/hubs/chat'
+2025-09-20 12:40:10.398 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat - 101 null null 15132.5082ms
+2025-09-20 12:40:22.066 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:40:22.067 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:40:22.160 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:40:22.161 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 95.0737ms
+2025-09-20 12:40:55.068 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:40:55.069 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:40:55.162 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:40:55.163 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 95.7984ms
+2025-09-20 12:41:28.046 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:41:28.048 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:41:28.164 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:41:28.166 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 120.1942ms
+2025-09-20 12:41:46.003 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat - null null
+2025-09-20 12:41:46.011 +00:00 [INF] Executing endpoint '/hubs/chat'
+2025-09-20 12:42:01.036 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:42:01.037 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:42:01.156 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:42:01.158 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 122.259ms
+2025-09-20 12:42:03.731 +00:00 [INF] Executed endpoint '/hubs/chat'
+2025-09-20 12:42:03.733 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat - 101 null null 15024.9087ms
+2025-09-20 12:42:29.800 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat - null null
+2025-09-20 12:42:29.814 +00:00 [INF] Executing endpoint '/hubs/chat'
+2025-09-20 12:42:34.021 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:42:34.022 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:42:34.234 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:42:34.236 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 214.997ms
+2025-09-20 12:42:44.821 +00:00 [INF] Executed endpoint '/hubs/chat'
+2025-09-20 12:42:44.823 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat - 101 null null 15023.1771ms
+2025-09-20 12:43:07.098 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:43:07.099 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:43:07.201 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:43:07.201 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 103.3557ms
+2025-09-20 12:43:40.111 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:43:40.166 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:43:40.340 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:43:40.347 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 235.4747ms
+2025-09-20 12:44:13.187 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:44:13.188 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:44:13.283 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:44:13.284 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 97.1429ms
+2025-09-20 12:44:46.148 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:44:46.150 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:44:46.303 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:44:46.304 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 156.0374ms
+2025-09-20 12:45:19.236 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:45:19.239 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:45:19.374 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:45:19.376 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 139.6614ms
+2025-09-20 12:45:52.272 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:45:52.273 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:45:52.399 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:45:52.401 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 129.2806ms
+2025-09-20 12:46:25.312 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:46:25.317 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:46:25.449 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:46:25.451 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 139.2357ms
+2025-09-20 12:46:58.366 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:46:58.370 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:46:58.492 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:46:58.493 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 126.8355ms
+2025-09-20 12:47:31.390 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:47:31.392 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:47:31.524 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:47:31.527 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 136.298ms
+2025-09-20 12:47:43.701 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Auth/quick-token - null null
+2025-09-20 12:47:43.722 +00:00 [INF] Executing endpoint 'ChatBackend.Controllers.AuthController.GenerateQuickToken (ChatBackend)'
+2025-09-20 12:47:43.795 +00:00 [INF] Route matched with {action = "GenerateQuickToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateQuickToken() on controller ChatBackend.Controllers.AuthController (ChatBackend).
+2025-09-20 12:47:43.822 +00:00 [INF] Generated quick test token for user: 7e678f89-f387-42b1-b1fb-ca77cbd1f2a6
+2025-09-20 12:47:43.828 +00:00 [INF] Executing OkObjectResult, writing value of type 'ChatBackend.Controllers.TokenResponse'.
+2025-09-20 12:47:43.836 +00:00 [INF] Executed action ChatBackend.Controllers.AuthController.GenerateQuickToken (ChatBackend) in 39.4573ms
+2025-09-20 12:47:43.837 +00:00 [INF] Executed endpoint 'ChatBackend.Controllers.AuthController.GenerateQuickToken (ChatBackend)'
+2025-09-20 12:47:43.838 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Auth/quick-token - 200 null application/json; charset=utf-8 137.2489ms
+2025-09-20 12:48:04.419 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:48:04.420 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:48:04.569 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:48:04.570 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 151.0242ms
+2025-09-20 12:48:37.472 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:48:37.474 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:48:37.699 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:48:37.701 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 228.4268ms
+2025-09-20 12:49:10.610 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:49:10.613 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:49:10.724 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:49:10.725 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 115.0628ms
+2025-09-20 12:49:43.589 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:49:43.594 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:49:43.720 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:49:43.721 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 132.0788ms
+2025-09-20 12:50:13.343 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJzdHJpbmciLCJ1bmlxdWVfbmFtZSI6InN0cmluZyIsImVtYWlsIjoic3RyaW5nIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3NTgzNzE3NzMsImV4cCI6MTc1ODQ1ODE3MywiaWF0IjoxNzU4MzcxNzczLCJpc3MiOiJDaGF0QmFja2VuZCIsImF1ZCI6IkNoYXRCYWNrZW5kVXNlcnMifQ.K9QMJmHcPv6qH59pjr3jc_IxmA1mcqkbY5O-2g6PNIo - null null
+2025-09-20 12:50:13.475 +00:00 [INF] Executing endpoint '/hubs/chat'
+2025-09-20 12:50:16.616 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:50:16.617 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:50:16.721 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:50:16.722 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 106.1599ms
+2025-09-20 12:50:28.514 +00:00 [INF] Executed endpoint '/hubs/chat'
+2025-09-20 12:50:28.516 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJzdHJpbmciLCJ1bmlxdWVfbmFtZSI6InN0cmluZyIsImVtYWlsIjoic3RyaW5nIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3NTgzNzE3NzMsImV4cCI6MTc1ODQ1ODE3MywiaWF0IjoxNzU4MzcxNzczLCJpc3MiOiJDaGF0QmFja2VuZCIsImF1ZCI6IkNoYXRCYWNrZW5kVXNlcnMifQ.K9QMJmHcPv6qH59pjr3jc_IxmA1mcqkbY5O-2g6PNIo - 101 null null 15172.3712ms
+2025-09-20 12:50:49.638 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:50:49.639 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:50:49.769 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:50:49.774 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 138.0328ms
+2025-09-20 12:50:55.862 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/hubs/chat?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJzdHJpbmciLCJ1bmlxdWVfbmFtZSI6InN0cmluZyIsImVtYWlsIjoic3RyaW5nIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3NTgzNzE3NzMsImV4cCI6MTc1ODQ1ODE3MywiaWF0IjoxNzU4MzcxNzczLCJpc3MiOiJDaGF0QmFja2VuZCIsImF1ZCI6IkNoYXRCYWNrZW5kVXNlcnMifQ.K9QMJmHcPv6qH59pjr3jc_IxmA1mcqkbY5O-2g6PNIo - null null
+2025-09-20 12:50:55.896 +00:00 [INF] Executing endpoint '/hubs/chat'
+2025-09-20 12:51:13.645 +00:00 [INF] Executed endpoint '/hubs/chat'
+2025-09-20 12:51:13.648 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/hubs/chat?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJzdHJpbmciLCJ1bmlxdWVfbmFtZSI6InN0cmluZyIsImVtYWlsIjoic3RyaW5nIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3NTgzNzE3NzMsImV4cCI6MTc1ODQ1ODE3MywiaWF0IjoxNzU4MzcxNzczLCJpc3MiOiJDaGF0QmFja2VuZCIsImF1ZCI6IkNoYXRCYWNrZW5kVXNlcnMifQ.K9QMJmHcPv6qH59pjr3jc_IxmA1mcqkbY5O-2g6PNIo - 101 null null 15062.7511ms
+2025-09-20 12:51:22.907 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:51:22.909 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:51:23.037 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:51:23.038 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 130.7706ms
+2025-09-20 12:51:56.389 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:51:56.392 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:51:56.606 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:51:56.608 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 219.0969ms
+2025-09-20 12:52:29.506 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:52:29.510 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:52:29.616 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:52:29.617 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 110.3946ms
+2025-09-20 12:53:02.510 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:53:02.513 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:53:02.653 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:53:02.655 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 146.9796ms
+2025-09-20 12:53:35.550 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:53:35.551 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:53:35.694 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:53:35.695 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 144.966ms
+2025-09-20 12:54:08.566 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:54:08.567 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:54:08.669 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:54:08.672 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 106.6256ms
+2025-09-20 12:54:41.532 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:54:41.534 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:54:41.621 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:54:41.622 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 90.0898ms
+2025-09-20 12:54:45.429 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Users?page=1&pageSize=50 - null null
+2025-09-20 12:54:45.442 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 12:54:45.447 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 12:54:45.449 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Users?page=1&pageSize=50 - 401 0 null 20.0975ms
+2025-09-20 12:55:14.517 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:55:14.518 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:55:14.651 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:55:14.655 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 137.6418ms
+2025-09-20 12:55:27.523 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Users - application/json 72
+2025-09-20 12:55:27.541 +00:00 [INF] CORS policy execution successful.
+2025-09-20 12:55:27.545 +00:00 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.CreateUser (ChatBackend)'
+2025-09-20 12:55:27.036 +00:00 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ChatBackend.DTOs.UserDto]] CreateUser(ChatBackend.DTOs.CreateUserDto) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-20 12:55:31.614 +00:00 [INF] Executed DbCommand (176ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime), @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "AvatarUrl", "CreatedAt", "Email", "LastSeen", "Status", "UpdatedAt", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-09-20 12:55:31.652 +00:00 [INF] User created with ID: "2c321804-9b68-4618-a8d4-64886d04313c"
+2025-09-20 12:55:31.670 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'ChatBackend.DTOs.UserDto'.
+2025-09-20 12:55:31.808 +00:00 [INF] Executed action ChatBackend.Controllers.UsersController.CreateUser (ChatBackend) in 1422.7157ms
+2025-09-20 12:55:31.809 +00:00 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.CreateUser (ChatBackend)'
+2025-09-20 12:55:31.810 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Users - 201 null application/json; charset=utf-8 1565.5122ms
+2025-09-20 12:55:43.414 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Users?page=1&pageSize=50 - null null
+2025-09-20 12:55:43.417 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 12:55:43.420 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 12:55:43.421 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Users?page=1&pageSize=50 - 401 0 null 6.8769ms
+2025-09-20 12:55:47.565 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:55:47.566 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:55:47.684 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:55:47.687 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 121.9053ms
+2025-09-20 12:56:20.564 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:56:20.566 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:56:20.704 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:56:20.706 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 141.4326ms
+2025-09-20 12:56:53.807 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:56:53.809 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:56:53.944 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:56:53.946 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 138.7811ms
+2025-09-20 12:57:26.873 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:57:26.875 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:57:27.000 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:57:27.002 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 128.8474ms
+2025-09-20 12:57:59.918 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:57:59.920 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:58:00.042 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:58:00.045 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 126.1783ms
+2025-09-20 12:58:32.947 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:58:32.948 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:58:33.091 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:58:33.094 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 147.5317ms
+2025-09-20 12:59:06.001 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:59:06.004 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:59:06.165 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:59:06.166 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 164.919ms
+2025-09-20 12:59:39.053 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 12:59:39.056 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 12:59:39.205 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 12:59:39.206 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 153.513ms
+2025-09-20 13:00:12.136 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:00:12.139 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:00:12.278 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:00:12.279 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 142.9056ms
+2025-09-20 13:00:45.176 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:00:45.178 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:00:45.281 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:00:45.283 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 107.2102ms
+2025-09-20 13:01:18.163 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:01:18.164 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:01:18.264 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:01:18.265 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 102.4954ms
+2025-09-20 13:01:51.140 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:01:51.140 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:01:51.268 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:01:51.269 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 129.2102ms
+2025-09-20 13:02:24.133 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:02:24.134 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:02:24.236 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:02:24.238 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 104.0481ms
+2025-09-20 13:02:57.153 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:02:57.155 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:02:57.250 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:02:57.251 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 98.1211ms
+2025-09-20 13:03:30.129 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:03:30.132 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:03:30.273 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:03:30.274 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 145.2211ms
+2025-09-20 13:04:03.169 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:04:03.170 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:04:03.263 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:04:03.264 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 97.1016ms
+2025-09-20 13:04:36.160 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:04:36.160 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:04:36.272 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:04:36.273 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 116.1306ms
+2025-09-20 13:05:09.153 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:05:09.155 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:05:09.303 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:05:09.305 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 151.915ms
+2025-09-20 13:05:42.272 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:05:42.274 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:05:42.380 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:05:42.381 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 108.9305ms
+2025-09-20 13:06:15.280 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:06:15.281 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:06:15.409 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:06:15.411 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 152.8721ms
+2025-09-20 13:06:18.173 +00:00 [INF] Application is shutting down...
+2025-09-20 13:07:14.733 +00:00 [INF] Connecting to Redis endpoints: redis:6379. Using Server Name: b8f5428a9793_b914ace8431f4ab69abe09025499443e
+2025-09-20 13:07:15.274 +00:00 [INF] Connected to Redis.
+2025-09-20 13:07:17.456 +00:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 13:07:18.062 +00:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 13:07:18.083 +00:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 13:07:18.096 +00:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 13:07:18.101 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 13:07:18.110 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 13:07:18.151 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-09-20 13:07:18.153 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 13:07:18.173 +00:00 [INF] Creating key {93281d24-357b-48fc-a559-6c85ae2c12fe} with creation date 2025-09-20 13:07:18Z, activation date 2025-09-20 13:07:18Z, and expiration date 2025-12-19 13:07:18Z.
+2025-09-20 13:07:18.196 +00:00 [WRN] No XML encryptor configured. Key {93281d24-357b-48fc-a559-6c85ae2c12fe} may be persisted to storage in unencrypted form.
+2025-09-20 13:07:18.208 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-93281d24-357b-48fc-a559-6c85ae2c12fe.xml'.
+2025-09-20 13:07:18.237 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2025-09-20 13:07:18.321 +00:00 [INF] Now listening on: http://[::]:8080
+2025-09-20 13:07:18.323 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 13:07:18.324 +00:00 [INF] Hosting environment: Development
+2025-09-20 13:07:18.324 +00:00 [INF] Content root path: /app
+2025-09-20 13:07:23.172 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:07:23.261 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-09-20 13:07:23.335 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:07:23.543 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:07:23.548 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 379.4039ms
+2025-09-20 13:07:56.452 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:07:56.461 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:07:56.663 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:07:56.665 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 212.9184ms
+2025-09-20 13:08:08.306 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/health - null null
+2025-09-20 13:08:08.317 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:08:08.422 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:08:08.423 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/health - 200 null text/plain 117.1177ms
+2025-09-20 13:08:10.838 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-09-20 13:08:11.014 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 176.5416ms
+2025-09-20 13:08:11.321 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-09-20 13:08:11.634 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 312.9115ms
+2025-09-20 13:08:29.539 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:08:29.543 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:08:29.670 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:08:29.672 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 132.2692ms
+2025-09-20 13:09:03.097 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:09:03.099 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:09:03.223 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:09:03.225 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 126.9712ms
+2025-09-20 13:09:36.225 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:09:36.227 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:09:36.332 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:09:36.333 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 107.56ms
+2025-09-20 13:10:09.203 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:10:09.205 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:10:09.358 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:10:09.360 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 157.052ms
+2025-09-20 13:10:42.225 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:10:42.227 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:10:42.318 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:10:42.319 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 93.7408ms
+2025-09-20 13:10:53.823 +00:00 [INF] Application is shutting down...
+2025-09-20 13:11:40.962 +00:00 [INF] Connecting to Redis endpoints: redis:6379. Using Server Name: 186162b7ab0a_d856bfbe88fd4569a3c21766a0870a5d
+2025-09-20 13:11:41.448 +00:00 [INF] Connected to Redis.
+2025-09-20 13:11:42.894 +00:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 13:11:43.496 +00:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 13:11:43.515 +00:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 13:11:43.521 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 13:11:43.525 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 13:11:43.535 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 13:11:43.576 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-09-20 13:11:43.578 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 13:11:43.601 +00:00 [INF] Creating key {5aad0a78-a7c3-49cb-8da7-82645db5d7eb} with creation date 2025-09-20 13:11:43Z, activation date 2025-09-20 13:11:43Z, and expiration date 2025-12-19 13:11:43Z.
+2025-09-20 13:11:43.612 +00:00 [WRN] No XML encryptor configured. Key {5aad0a78-a7c3-49cb-8da7-82645db5d7eb} may be persisted to storage in unencrypted form.
+2025-09-20 13:11:43.618 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-5aad0a78-a7c3-49cb-8da7-82645db5d7eb.xml'.
+2025-09-20 13:11:43.633 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2025-09-20 13:11:43.730 +00:00 [INF] Now listening on: http://[::]:8080
+2025-09-20 13:11:43.732 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 13:11:43.733 +00:00 [INF] Hosting environment: Development
+2025-09-20 13:11:43.734 +00:00 [INF] Content root path: /app
+2025-09-20 13:11:45.181 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:11:45.261 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-09-20 13:11:45.307 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:11:45.505 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:11:45.515 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 334.8811ms
+2025-09-20 13:12:18.424 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:12:18.434 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:12:18.653 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:12:18.656 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 232.6326ms
+2025-09-20 13:12:51.541 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:12:51.548 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:12:51.677 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:12:51.680 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 138.5758ms
+2025-09-20 13:13:24.557 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:13:24.559 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:13:24.670 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:13:24.672 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 114.2891ms
+2025-09-20 13:13:57.546 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:13:57.548 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:13:57.641 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:13:57.642 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 95.6339ms
+2025-09-20 13:14:30.509 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:14:30.511 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:14:30.643 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:14:30.645 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 135.2601ms
+2025-09-20 13:15:03.489 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:15:03.490 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:15:03.596 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:15:03.598 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 108.924ms
+2025-09-20 13:15:36.461 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:15:36.463 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:15:36.550 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:15:36.552 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 90.19ms
+2025-09-20 13:16:09.427 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:16:09.429 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:16:09.515 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:16:09.517 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 89.6585ms
+2025-09-20 13:16:42.414 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:16:42.417 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:16:42.521 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:16:42.523 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 108.5544ms
+2025-09-20 13:17:15.406 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:17:15.408 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:17:15.512 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:17:15.513 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 107.4124ms
+2025-09-20 13:17:48.539 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:17:48.541 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:17:48.640 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:17:48.641 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 102.1399ms
+2025-09-20 13:18:21.511 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:18:21.512 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:18:21.631 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:18:21.632 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 121.1926ms
+2025-09-20 13:18:54.528 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:18:54.530 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:18:54.617 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:18:54.619 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 90.7663ms
+2025-09-20 13:19:27.506 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:19:27.508 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:19:27.643 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:19:27.644 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 137.6644ms
+2025-09-20 13:20:00.546 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:20:00.548 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:20:00.682 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:20:00.684 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 137.6581ms
+2025-09-20 13:20:33.604 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:20:33.606 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:20:33.129 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:20:33.132 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 144.7375ms
+2025-09-20 13:21:10.135 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:21:10.137 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:21:10.265 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:21:10.267 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 131.4843ms
+2025-09-20 13:21:28.289 +00:00 [INF] Application is shutting down...
+2025-09-20 13:22:21.510 +00:00 [INF] Connecting to Redis endpoints: redis:6379. Using Server Name: 5c5058b5d3a5_b0397932ba9a4d89bc82c2a217644e99
+2025-09-20 13:22:21.904 +00:00 [INF] Connected to Redis.
+2025-09-20 13:22:23.854 +00:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 13:22:24.348 +00:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 13:22:24.367 +00:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 13:22:24.378 +00:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 13:22:24.382 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 13:22:24.396 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 13:22:24.449 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-09-20 13:22:24.451 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 13:22:24.482 +00:00 [INF] Creating key {c8fa4b62-ac2b-411b-a091-77f99d8872b9} with creation date 2025-09-20 13:22:24Z, activation date 2025-09-20 13:22:24Z, and expiration date 2025-12-19 13:22:24Z.
+2025-09-20 13:22:24.507 +00:00 [WRN] No XML encryptor configured. Key {c8fa4b62-ac2b-411b-a091-77f99d8872b9} may be persisted to storage in unencrypted form.
+2025-09-20 13:22:24.518 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-c8fa4b62-ac2b-411b-a091-77f99d8872b9.xml'.
+2025-09-20 13:22:24.548 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2025-09-20 13:22:24.696 +00:00 [INF] Now listening on: http://[::]:8080
+2025-09-20 13:22:24.698 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 13:22:24.698 +00:00 [INF] Hosting environment: Development
+2025-09-20 13:22:24.699 +00:00 [INF] Content root path: /app
+2025-09-20 13:22:25.395 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:22:25.495 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-09-20 13:22:25.575 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:22:25.775 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:22:25.785 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 391.5878ms
+2025-09-20 13:22:58.641 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:22:58.650 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:22:58.837 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:22:58.839 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 197.1065ms
+2025-09-20 13:23:31.895 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:23:31.904 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:23:32.056 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:23:32.058 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 162.779ms
+2025-09-20 13:24:04.942 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:24:04.944 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:24:05.056 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:24:05.058 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 116.3969ms
+2025-09-20 13:24:37.959 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:24:37.961 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:24:38.091 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:24:38.092 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 132.7122ms
+2025-09-20 13:25:10.957 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:25:10.958 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:25:11.052 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:25:11.053 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 96.3456ms
+2025-09-20 13:25:43.909 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:25:43.911 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:25:44.001 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:25:44.002 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 92.4849ms
+2025-09-20 13:26:16.852 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:26:16.854 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:26:16.946 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:26:16.947 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 94.1651ms
+2025-09-20 13:26:49.792 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:26:49.793 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:26:49.875 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:26:49.876 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 84.2789ms
+2025-09-20 13:27:22.735 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:27:22.737 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:27:22.855 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:27:22.857 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 121.7155ms
+2025-09-20 13:27:55.706 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:27:55.708 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:27:55.919 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:27:55.920 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 214.0878ms
+2025-09-20 13:28:28.783 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:28:28.785 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:28:28.907 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:28:28.908 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 125.6594ms
+2025-09-20 13:29:01.828 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:29:01.829 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:29:01.967 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:29:01.968 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 140.1344ms
+2025-09-20 13:29:34.865 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:29:34.866 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:29:35.547 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:29:35.549 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 684.1161ms
+2025-09-20 13:30:08.445 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:30:08.447 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:30:08.605 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:30:08.608 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 162.7743ms
+2025-09-20 13:30:41.511 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:30:41.513 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:30:41.638 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:30:41.640 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 129.1412ms
+2025-09-20 13:31:14.509 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:31:14.510 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:31:14.622 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:31:14.624 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 115.0252ms
+2025-09-20 13:31:47.529 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:31:47.530 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:31:47.638 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:31:47.640 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 110.6778ms
+2025-09-20 13:32:20.497 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:32:20.498 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:32:20.600 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:32:20.601 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 104.4099ms
+2025-09-20 13:32:53.486 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:32:53.487 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:32:53.597 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:32:53.599 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 112.9376ms
+2025-09-20 13:33:26.470 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:33:26.471 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:33:26.610 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:33:26.612 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 141.9929ms
+2025-09-20 13:33:59.503 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:33:59.507 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:33:59.629 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:33:59.631 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 128.4116ms
+2025-09-20 13:34:32.531 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:34:32.533 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:34:32.640 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:34:32.642 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 110.7464ms
+2025-09-20 13:35:05.509 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:35:05.510 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:35:05.614 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:35:05.615 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 106.4722ms
+2025-09-20 13:35:38.495 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:35:38.497 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:35:38.604 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:35:38.605 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 110.4614ms
+2025-09-20 13:36:11.851 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:36:11.859 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:36:11.956 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:36:11.957 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 105.8399ms
+2025-09-20 13:36:44.853 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:36:44.854 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:36:44.966 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:36:44.967 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 114.4207ms
+2025-09-20 13:37:17.870 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:37:17.873 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:37:17.978 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:37:17.979 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 109.5357ms
+2025-09-20 13:37:50.854 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:37:50.856 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:37:50.973 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:37:50.974 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 120.2061ms
+2025-09-20 13:38:25.328 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:38:25.330 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:38:25.480 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:38:25.481 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 153.3485ms
+2025-09-20 13:38:58.375 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:38:58.381 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:38:58.530 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:38:58.532 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 156.654ms
+2025-09-20 13:39:31.403 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:39:31.410 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:39:31.493 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:39:31.494 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 90.3596ms
+2025-09-20 13:40:05.019 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:40:05.021 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:40:05.115 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:40:05.116 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 97.2724ms
+2025-09-20 13:40:38.021 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:40:38.022 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:40:38.249 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:40:38.251 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 230.1014ms
+2025-09-20 13:41:11.124 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:41:11.125 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:41:11.670 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:41:11.671 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 547.5649ms
+2025-09-20 13:41:44.493 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:41:44.493 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:41:44.575 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:41:44.576 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 83.739ms
+2025-09-20 13:42:17.438 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:42:17.439 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:42:17.534 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:42:17.536 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 97.366ms
+2025-09-20 13:42:50.403 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:42:50.404 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:42:50.503 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:42:50.504 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 101.1516ms
+2025-09-20 13:43:23.625 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:43:23.626 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:43:23.717 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:43:23.718 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 93.0261ms
+2025-09-20 13:43:56.928 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:43:56.929 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:43:57.042 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:43:57.044 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 116.0232ms
+2025-09-20 13:44:29.897 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:44:29.898 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:44:29.999 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:44:30.000 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 102.6935ms
+2025-09-20 13:45:02.857 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:45:02.858 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:45:02.955 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:45:02.956 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 98.8517ms
+2025-09-20 13:45:35.801 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:45:35.802 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:45:35.996 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:45:35.997 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 195.977ms
+2025-09-20 13:46:08.945 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:46:08.948 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:46:09.035 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:46:09.036 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 91.3681ms
+2025-09-20 13:46:41.921 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:46:41.923 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:46:42.024 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:46:42.026 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 105.2612ms
+2025-09-20 13:47:14.894 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:47:14.895 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:47:14.988 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:47:14.989 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 94.5493ms
+2025-09-20 13:47:47.841 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:47:47.843 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:47:47.941 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:47:47.943 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 102.0762ms
+2025-09-20 13:48:20.846 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:48:20.848 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:48:20.973 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:48:20.976 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 130.7211ms
+2025-09-20 13:48:53.840 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:48:53.842 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:48:53.939 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:48:53.941 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 100.2482ms
+2025-09-20 13:49:01.052 +00:00 [INF] Application is shutting down...
+2025-09-20 13:49:53.084 +00:00 [INF] Connecting to Redis endpoints: redis:6379. Using Server Name: 30672f017d5c_7ecc2058241e4f39b8ea3d389eb1306d
+2025-09-20 13:49:53.650 +00:00 [INF] Connected to Redis.
+2025-09-20 13:49:55.761 +00:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 13:49:56.579 +00:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 13:49:56.602 +00:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 13:49:56.615 +00:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 13:49:56.619 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 13:49:56.628 +00:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 13:49:56.683 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-09-20 13:49:56.685 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-20 13:49:56.706 +00:00 [INF] Creating key {4b56c141-8f47-467e-a6a1-92804971f4dc} with creation date 2025-09-20 13:49:56Z, activation date 2025-09-20 13:49:56Z, and expiration date 2025-12-19 13:49:56Z.
+2025-09-20 13:49:56.731 +00:00 [WRN] No XML encryptor configured. Key {4b56c141-8f47-467e-a6a1-92804971f4dc} may be persisted to storage in unencrypted form.
+2025-09-20 13:49:56.759 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-4b56c141-8f47-467e-a6a1-92804971f4dc.xml'.
+2025-09-20 13:49:56.795 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2025-09-20 13:49:56.901 +00:00 [INF] Now listening on: http://[::]:8080
+2025-09-20 13:49:56.902 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 13:49:56.903 +00:00 [INF] Hosting environment: Development
+2025-09-20 13:49:56.904 +00:00 [INF] Content root path: /app
+2025-09-20 13:50:00.717 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:50:00.815 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-09-20 13:50:00.908 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:50:01.128 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:50:01.134 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 420.7748ms
+2025-09-20 13:50:33.986 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:50:33.992 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:50:34.203 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:50:34.205 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 219.3148ms
+2025-09-20 13:51:11.366 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:51:11.373 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:51:11.539 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:51:11.540 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 174.6696ms
+2025-09-20 13:51:44.452 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:51:44.454 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:51:44.560 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:51:44.561 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 109.4504ms
+2025-09-20 13:52:17.420 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:52:17.421 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:52:17.508 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:52:17.509 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 89.199ms
+2025-09-20 13:52:50.353 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:52:50.355 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:52:50.649 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:52:50.651 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 297.871ms
+2025-09-20 13:53:23.554 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:53:23.555 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:53:23.684 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:53:23.686 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 132.4646ms
+2025-09-20 13:53:56.822 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:53:56.852 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:53:56.950 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:53:56.951 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 128.6409ms
+2025-09-20 13:54:29.814 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:54:29.816 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:54:29.933 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:54:29.934 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 120.0941ms
+2025-09-20 13:55:02.786 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:55:02.788 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:55:02.908 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:55:02.910 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 123.7061ms
+2025-09-20 13:55:36.043 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:55:36.044 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:55:36.548 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:55:36.550 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 507.3385ms
+2025-09-20 13:56:09.629 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:56:09.630 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:56:09.755 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:56:09.757 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 128.1854ms
+2025-09-20 13:56:42.640 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:56:42.642 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:56:42.729 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:56:42.731 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 90.7114ms
+2025-09-20 13:57:15.799 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:57:15.802 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:57:15.898 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:57:15.899 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 99.8881ms
+2025-09-20 13:57:48.759 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:57:48.760 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:57:48.862 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:57:48.864 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 104.8901ms
+2025-09-20 13:58:21.734 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:58:21.736 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:58:21.959 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:58:21.962 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 227.9099ms
+2025-09-20 13:58:54.851 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:58:54.852 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:58:54.967 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:58:54.968 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 117.5779ms
+2025-09-20 13:59:27.957 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 13:59:27.959 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 13:59:28.086 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 13:59:28.088 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 130.4042ms
+2025-09-20 14:00:01.029 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 14:00:01.032 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 14:00:01.159 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 14:00:01.161 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 131.8772ms
+2025-09-20 14:00:34.119 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 14:00:34.120 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 14:00:34.248 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 14:00:34.250 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 131.078ms
+2025-09-20 14:01:07.108 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 14:01:07.109 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 14:01:07.362 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 14:01:07.365 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 256.4929ms
+2025-09-20 14:01:40.264 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 14:01:40.267 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 14:01:40.381 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 14:01:40.385 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 120.7915ms
+2025-09-20 14:02:13.277 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 14:02:13.278 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 14:02:13.375 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 14:02:13.377 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 100.6369ms
+2025-09-20 14:02:46.220 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 14:02:46.222 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 14:02:46.331 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 14:02:46.332 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 111.4526ms
+2025-09-20 14:03:19.234 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/health - null null
+2025-09-20 14:03:19.236 +00:00 [INF] Executing endpoint 'Health checks'
+2025-09-20 14:03:19.331 +00:00 [INF] Executed endpoint 'Health checks'
+2025-09-20 14:03:19.333 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/health - 200 null text/plain 98.0141ms
+2025-09-20 14:03:44.439 +00:00 [INF] Application is shutting down...
+2025-09-20 19:58:39.700 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_f6b609ae918a4601bb6ba8a8c38abfda
+2025-09-20 19:58:41.054 +05:30 [INF] Connected to Redis.
+2025-09-20 19:58:47.964 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 19:58:49.179 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 19:58:49.197 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 19:58:49.207 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 19:58:49.212 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 19:58:49.228 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 19:58:49.335 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-20 19:58:49.378 +05:30 [INF] Creating key {1b108ad7-8a17-4bb2-9ce2-0001f82d4103} with creation date 2025-09-20 14:28:49Z, activation date 2025-09-20 14:28:49Z, and expiration date 2025-12-19 14:28:49Z.
+2025-09-20 19:58:49.535 +05:30 [INF] Writing data to file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-1b108ad7-8a17-4bb2-9ce2-0001f82d4103.xml'.
+2025-09-20 19:58:50.197 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-20 19:58:50.199 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-20 19:58:50.426 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 19:58:50.429 +05:30 [INF] Hosting environment: Development
+2025-09-20 19:58:50.433 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-20 19:58:55.007 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger - null null
+2025-09-20 19:58:55.897 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger - 301 0 null 945.1252ms
+2025-09-20 19:58:55.930 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/index.html - null null
+2025-09-20 19:58:56.126 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/index.html - 200 null text/html;charset=utf-8 195.9003ms
+2025-09-20 19:58:56.190 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/swagger-ui.css - null null
+2025-09-20 19:58:56.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/index.css - null null
+2025-09-20 19:58:56.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-20 19:58:56.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-20 19:58:56.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/index.js - null null
+2025-09-20 19:58:56.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/swagger-ui-bundle.js - null null
+2025-09-20 19:58:56.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/index.js - 200 null application/javascript;charset=utf-8 91.0618ms
+2025-09-20 19:58:56.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 108.1572ms
+2025-09-20 19:58:56.322 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/index.css - 200 152 text/css 128.7108ms
+2025-09-20 19:58:56.351 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/swagger-ui.css - 200 23647 text/css 161.2231ms
+2025-09-20 19:58:56.351 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-20 19:58:56.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/swagger-ui-standalone-preset.js - 200 70860 text/javascript 158.7963ms
+2025-09-20 19:58:56.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/swagger-ui-bundle.js - 200 417980 text/javascript 213.4783ms
+2025-09-20 19:58:56.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 465.2153ms
+2025-09-20 19:58:57.014 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-20 19:58:57.106 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 104.1911ms
+2025-09-20 19:58:57.125 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/favicon-32x32.png - null null
+2025-09-20 19:58:57.139 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/favicon-32x32.png - 200 628 image/png 13.8264ms
+2025-09-20 20:00:44.996 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=50 - null null
+2025-09-20 20:00:49.625 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 20:00:49.636 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 20:00:49.639 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=50 - 401 0 null 4643.3341ms
+2025-09-20 20:02:05.550 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7207/api/Users?page=1&pageSize=50 - null null
+2025-09-20 20:02:05.571 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 20:02:05.575 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 20:02:05.584 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7207/api/Users?page=1&pageSize=50 - 401 0 null 35.1724ms
+2025-09-20 20:02:56.327 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7207/api/Users?page=1&pageSize=50 - null null
+2025-09-20 20:02:57.615 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-20 20:02:57.783 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-09-20 20:02:57.789 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 20:02:57.799 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 20:02:57.804 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7207/api/Users?page=1&pageSize=50 - 401 0 null 1476.7376ms
+2025-09-20 20:07:28.895 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users/2c321804-9b68-4618-a8d4-64886d04313c - null null
+2025-09-20 20:07:28.970 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 20:07:28.972 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 20:07:28.976 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users/2c321804-9b68-4618-a8d4-64886d04313c - 401 0 null 81.9079ms
+2025-09-20 20:09:25.799 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7207/api/Users/2c321804-9b68-4618-a8d4-64886d04313c - null null
+2025-09-20 20:09:25.839 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-20 20:09:25.864 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-09-20 20:09:25.868 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 20:09:25.872 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 20:09:25.878 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7207/api/Users/2c321804-9b68-4618-a8d4-64886d04313c - 401 0 null 81.2397ms
+2025-09-20 20:11:22.134 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_649c6b2a64004ccdaf3bef2bca3e32f9
+2025-09-20 20:11:23.325 +05:30 [INF] Connected to Redis.
+2025-09-20 20:11:26.644 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 20:11:27.323 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 20:11:27.347 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 20:11:27.357 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 20:11:27.364 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 20:11:27.378 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 20:11:27.475 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-20 20:11:28.668 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-20 20:11:28.671 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-20 20:11:28.927 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 20:11:28.931 +05:30 [INF] Hosting environment: Development
+2025-09-20 20:11:28.934 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-20 20:11:30.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-20 20:11:30.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-20 20:11:30.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 172.168ms
+2025-09-20 20:11:31.012 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 287.6637ms
+2025-09-20 20:11:31.182 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-20 20:11:31.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 247.0389ms
+2025-09-20 20:11:42.038 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7207/api/Auth/generate-token - application/json 69
+2025-09-20 20:11:42.092 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:11:42.297 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:11:42.372 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(ChatBackend.Controllers.TokenRequest) on controller ChatBackend.Controllers.AuthController (ChatBackend).
+2025-09-20 20:11:42.674 +05:30 [ERR] Error generating token
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'http://www.w3.org/2001/04/xmldsig-more#hmac-sha256' requires a key size of at least '128' bits. Key '[PII of type 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', is of size: '88'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at ChatBackend.Controllers.AuthController.GenerateToken(TokenRequest request) in D:\Projects\SignalRChatBackend\Controllers\AuthController.cs:line 45
+2025-09-20 20:11:42.982 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-20 20:11:43.005 +05:30 [INF] Executed action ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend) in 619.4841ms
+2025-09-20 20:11:43.009 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:11:43.013 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7207/api/Auth/generate-token - 500 null text/plain; charset=utf-8 981.0375ms
+2025-09-20 20:12:44.885 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7207/api/Auth/generate-token - application/json 69
+2025-09-20 20:12:44.938 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:12:44.948 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:12:44.954 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(ChatBackend.Controllers.TokenRequest) on controller ChatBackend.Controllers.AuthController (ChatBackend).
+2025-09-20 20:15:05.655 +05:30 [ERR] Error generating token
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'http://www.w3.org/2001/04/xmldsig-more#hmac-sha256' requires a key size of at least '128' bits. Key '[PII of type 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', is of size: '88'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at ChatBackend.Controllers.AuthController.GenerateToken(TokenRequest request) in D:\Projects\SignalRChatBackend\Controllers\AuthController.cs:line 45
+2025-09-20 20:15:05.858 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-09-20 20:15:05.878 +05:30 [INF] Executed action ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend) in 140912.3703ms
+2025-09-20 20:15:05.900 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:15:05.906 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7207/api/Auth/generate-token - 500 null text/plain; charset=utf-8 141021.7588ms
+2025-09-20 20:15:54.267 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_c8d217dbb2a7437a8825a11c74d67b2e
+2025-09-20 20:15:55.232 +05:30 [INF] Connected to Redis.
+2025-09-20 20:15:58.810 +05:30 [INF] Executed DbCommand (133ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 20:15:59.427 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 20:15:59.453 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 20:15:59.467 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 20:15:59.474 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 20:15:59.487 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 20:15:59.587 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-20 20:16:00.308 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-20 20:16:00.311 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-20 20:16:01.454 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 20:16:01.460 +05:30 [INF] Hosting environment: Development
+2025-09-20 20:16:01.463 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-20 20:16:02.897 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-20 20:16:02.976 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 125.945ms
+2025-09-20 20:16:03.039 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-20 20:16:03.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 228.5821ms
+2025-09-20 20:16:04.415 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-20 20:16:04.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 259.3776ms
+2025-09-20 20:16:13.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/index.html - null null
+2025-09-20 20:16:13.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/index.html - 200 null text/html;charset=utf-8 532.6421ms
+2025-09-20 20:16:14.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-20 20:16:14.043 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-20 20:16:14.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 24.1928ms
+2025-09-20 20:16:14.089 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.1455ms
+2025-09-20 20:16:14.242 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-20 20:16:14.311 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.9967ms
+2025-09-20 20:16:29.291 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7207/api/Auth/generate-token - application/json 69
+2025-09-20 20:16:29.348 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:16:29.552 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:16:29.592 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(ChatBackend.Controllers.TokenRequest) on controller ChatBackend.Controllers.AuthController (ChatBackend).
+2025-09-20 20:17:28.632 +05:30 [INF] Connecting to Redis endpoints: localhost:6379. Using Server Name: DESKTOP-UC6VE2G_0d8721f87da540d0a503d1420d08d5bd
+2025-09-20 20:17:29.366 +05:30 [INF] Connected to Redis.
+2025-09-20 20:17:32.030 +05:30 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 20:17:32.709 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-09-20 20:17:32.730 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-09-20 20:17:32.741 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-09-20 20:17:32.747 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-20 20:17:32.759 +05:30 [INF] No migrations were applied. The database is already up to date.
+2025-09-20 20:17:32.854 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-20 20:17:33.641 +05:30 [INF] Now listening on: https://localhost:7207
+2025-09-20 20:17:33.643 +05:30 [INF] Now listening on: http://localhost:5182
+2025-09-20 20:17:34.688 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-20 20:17:34.744 +05:30 [INF] Hosting environment: Development
+2025-09-20 20:17:34.871 +05:30 [INF] Content root path: D:\Projects\SignalRChatBackend
+2025-09-20 20:17:36.005 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-20 20:17:36.005 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/_vs/browserLink - null null
+2025-09-20 20:17:36.131 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 165.9072ms
+2025-09-20 20:17:36.204 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/_vs/browserLink - 200 null text/javascript; charset=UTF-8 244.653ms
+2025-09-20 20:17:36.373 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - null null
+2025-09-20 20:17:36.992 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 618.9021ms
+2025-09-20 20:18:09.038 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7207/api/Auth/generate-token - application/json 69
+2025-09-20 20:18:09.084 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:18:09.294 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:18:09.344 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(ChatBackend.Controllers.TokenRequest) on controller ChatBackend.Controllers.AuthController (ChatBackend).
+2025-09-20 20:18:25.972 +05:30 [INF] Generated test token for user: string
+2025-09-20 20:18:28.843 +05:30 [INF] Executing OkObjectResult, writing value of type 'ChatBackend.Controllers.TokenResponse'.
+2025-09-20 20:18:28.875 +05:30 [INF] Executed action ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend) in 19518.7722ms
+2025-09-20 20:18:28.879 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:18:28.883 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7207/api/Auth/generate-token - 200 null application/json; charset=utf-8 19845.4652ms
+2025-09-20 20:19:33.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=50 - null null
+2025-09-20 20:19:33.518 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 20:19:33.532 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 20:19:33.536 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=50 - 401 0 null 74.3717ms
+2025-09-20 20:19:53.362 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7207/api/Users/2c321804-9b68-4618-a8d4-64886d04313c - null null
+2025-09-20 20:19:53.502 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-20 20:19:53.750 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-09-20 20:19:53.756 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-20 20:19:53.760 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-20 20:19:53.769 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7207/api/Users/2c321804-9b68-4618-a8d4-64886d04313c - 401 0 null 408.1704ms
+2025-09-20 20:20:50.967 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7207/api/Users - application/json 82
+2025-09-20 20:20:51.000 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:20:51.007 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.CreateUser (ChatBackend)'
+2025-09-20 20:20:51.040 +05:30 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ChatBackend.DTOs.UserDto]] CreateUser(ChatBackend.DTOs.CreateUserDto) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-20 20:20:51.925 +05:30 [INF] Executed DbCommand (165ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime), @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "AvatarUrl", "CreatedAt", "Email", "LastSeen", "Status", "UpdatedAt", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-09-20 20:20:51.982 +05:30 [INF] User created with ID: "239d0cbe-c8ed-41cb-aa56-e83db9ea737e"
+2025-09-20 20:20:51.998 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ChatBackend.DTOs.UserDto'.
+2025-09-20 20:20:52.096 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.CreateUser (ChatBackend) in 1050.6828ms
+2025-09-20 20:20:52.103 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.CreateUser (ChatBackend)'
+2025-09-20 20:20:52.120 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7207/api/Users - 201 null application/json; charset=utf-8 1159.7855ms
+2025-09-20 20:21:33.156 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7207/api/Auth/generate-token - application/json 112
+2025-09-20 20:21:33.166 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:21:33.169 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:21:33.172 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(ChatBackend.Controllers.TokenRequest) on controller ChatBackend.Controllers.AuthController (ChatBackend).
+2025-09-20 20:21:36.064 +05:30 [INF] Generated test token for user: sahil
+2025-09-20 20:21:36.072 +05:30 [INF] Executing OkObjectResult, writing value of type 'ChatBackend.Controllers.TokenResponse'.
+2025-09-20 20:21:36.077 +05:30 [INF] Executed action ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend) in 2901.4079ms
+2025-09-20 20:21:36.083 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.AuthController.GenerateToken (ChatBackend)'
+2025-09-20 20:21:36.087 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7207/api/Auth/generate-token - 200 null application/json; charset=utf-8 2931.1768ms
+2025-09-20 20:22:10.029 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=50 - null null
+2025-09-20 20:22:10.153 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-20 20:22:10.173 +05:30 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.UserDto]]] GetUsers(Int32, Int32) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-20 20:22:31.642 +05:30 [INF] Executed DbCommand (81ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+ORDER BY u."Username"
+LIMIT @__p_1 OFFSET @__p_0
+2025-09-20 20:22:46.999 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.UserDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-20 20:22:47.014 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.GetUsers (ChatBackend) in 36838.5052ms
+2025-09-20 20:22:47.018 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.GetUsers (ChatBackend)'
+2025-09-20 20:22:47.022 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Users?page=1&pageSize=50 - 200 null application/json; charset=utf-8 36993.0267ms
+2025-09-20 20:23:09.967 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7207/api/Users/status - application/json 17
+2025-09-20 20:23:09.986 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:23:09.990 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.UpdateUserStatus (ChatBackend)'
+2025-09-20 20:23:10.004 +05:30 [INF] Route matched with {action = "UpdateUserStatus", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ChatBackend.DTOs.UserDto]] UpdateUserStatus(ChatBackend.DTOs.UpdateUserStatusDto) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-20 20:23:10.538 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Users" AS u
+WHERE u."Id" = @__p_0
+LIMIT 1
+2025-09-20 20:23:10.588 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "LastSeen" = @p0, "UpdatedAt" = @p1
+WHERE "Id" = @p2;
+2025-09-20 20:23:10.595 +05:30 [INF] Executing OkObjectResult, writing value of type 'ChatBackend.DTOs.UserDto'.
+2025-09-20 20:23:10.599 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.UpdateUserStatus (ChatBackend) in 589.5222ms
+2025-09-20 20:23:10.603 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.UpdateUserStatus (ChatBackend)'
+2025-09-20 20:23:10.606 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7207/api/Users/status - 200 null application/json; charset=utf-8 639.2466ms
+2025-09-20 20:29:12.099 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7207/api/Users - application/json 79
+2025-09-20 20:29:12.178 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:29:12.227 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.UsersController.CreateUser (ChatBackend)'
+2025-09-20 20:29:12.261 +05:30 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ChatBackend.DTOs.UserDto]] CreateUser(ChatBackend.DTOs.CreateUserDto) on controller ChatBackend.Controllers.UsersController (ChatBackend).
+2025-09-20 20:29:12.800 +05:30 [INF] Executed DbCommand (113ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = DateTime), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime), @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "AvatarUrl", "CreatedAt", "Email", "LastSeen", "Status", "UpdatedAt", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-09-20 20:29:12.810 +05:30 [INF] User created with ID: "5fda949a-2296-4d62-abbe-d5ebb43573f4"
+2025-09-20 20:29:12.817 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ChatBackend.DTOs.UserDto'.
+2025-09-20 20:29:12.844 +05:30 [INF] Executed action ChatBackend.Controllers.UsersController.CreateUser (ChatBackend) in 575.896ms
+2025-09-20 20:29:12.850 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.UsersController.CreateUser (ChatBackend)'
+2025-09-20 20:29:12.856 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7207/api/Users - 201 null application/json; charset=utf-8 770.4358ms
+2025-09-20 20:33:36.818 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7207/api/Conversations - application/json 138
+2025-09-20 20:33:36.842 +05:30 [INF] CORS policy execution successful.
+2025-09-20 20:33:36.864 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.ConversationsController.CreateConversation (ChatBackend)'
+2025-09-20 20:33:36.993 +05:30 [INF] Route matched with {action = "CreateConversation", controller = "Conversations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ChatBackend.DTOs.ConversationDto]] CreateConversation(ChatBackend.DTOs.CreateConversationDto) on controller ChatBackend.Controllers.ConversationsController (ChatBackend).
+2025-09-20 20:34:00.837 +05:30 [INF] Executed DbCommand (106ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?' (DbType = DateTime), @p5='?', @p6='?' (DbType = Boolean), @p7='?', @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Conversations" ("Id", "AvatarUrl", "CreatedAt", "CreatedByUserId", "DeletedAt", "Description", "IsDeleted", "Name", "Type", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-09-20 20:34:34.998 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32), @p7='?' (DbType = Guid), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Boolean), @p11='?' (DbType = DateTime), @p12='?' (DbType = DateTime), @p13='?' (DbType = DateTime), @p14='?' (DbType = Int32), @p15='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "UserConversations" ("Id", "ConversationId", "IsActive", "JoinedAt", "LastReadAt", "LeftAt", "Role", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INSERT INTO "UserConversations" ("Id", "ConversationId", "IsActive", "JoinedAt", "LastReadAt", "LeftAt", "Role", "UserId")
+VALUES (@p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-09-20 20:34:35.873 +05:30 [INF] Conversation created with ID: "9bbcf5de-5470-4033-adbb-32f03d097e0b"
+2025-09-20 20:34:36.686 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@__conversationId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."AvatarUrl", s."CreatedAt", s."CreatedByUserId", s."DeletedAt", s."Description", s."IsDeleted", s."Name", s."Type", s."UpdatedAt", s."Id0", s."AvatarUrl0", s."CreatedAt0", s."Email", s."LastSeen", s."Status", s."UpdatedAt0", s."Username", s0."Id", s0."ConversationId", s0."IsActive", s0."JoinedAt", s0."LastReadAt", s0."LeftAt", s0."Role", s0."UserId", s0."Id0", s0."AvatarUrl", s0."CreatedAt", s0."Email", s0."LastSeen", s0."Status", s0."UpdatedAt", s0."Username"
+FROM (
+    SELECT c."Id", c."AvatarUrl", c."CreatedAt", c."CreatedByUserId", c."DeletedAt", c."Description", c."IsDeleted", c."Name", c."Type", c."UpdatedAt", u."Id" AS "Id0", u."AvatarUrl" AS "AvatarUrl0", u."CreatedAt" AS "CreatedAt0", u."Email", u."LastSeen", u."Status", u."UpdatedAt" AS "UpdatedAt0", u."Username"
+    FROM "Conversations" AS c
+    INNER JOIN "Users" AS u ON c."CreatedByUserId" = u."Id"
+    WHERE c."Id" = @__conversationId_0 AND NOT (c."IsDeleted")
+    LIMIT 1
+) AS s
+LEFT JOIN (
+    SELECT u0."Id", u0."ConversationId", u0."IsActive", u0."JoinedAt", u0."LastReadAt", u0."LeftAt", u0."Role", u0."UserId", u1."Id" AS "Id0", u1."AvatarUrl", u1."CreatedAt", u1."Email", u1."LastSeen", u1."Status", u1."UpdatedAt", u1."Username"
+    FROM "UserConversations" AS u0
+    INNER JOIN "Users" AS u1 ON u0."UserId" = u1."Id"
+) AS s0 ON s."Id" = s0."ConversationId"
+ORDER BY s."Id", s."Id0", s0."Id"
+2025-09-20 20:34:36.772 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__conversation_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."Content", m."ContentType", m."ConversationId", m."CreatedAt", m."DeletedAt", m."FileName", m."FileSize", m."FileUrl", m."IsDeleted", m."ReplyToMessageId", m."SenderId", m."Type", m."UpdatedAt", u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Messages" AS m
+INNER JOIN "Users" AS u ON m."SenderId" = u."Id"
+WHERE m."ConversationId" = @__conversation_Id_0 AND NOT (m."IsDeleted")
+ORDER BY m."CreatedAt" DESC
+LIMIT 1
+2025-09-20 20:34:36.920 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@__conversation_Id_0='?' (DbType = Guid), @__currentUserId_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Messages" AS m
+WHERE m."ConversationId" = @__conversation_Id_0 AND m."SenderId" <> @__currentUserId_1 AND NOT (m."IsDeleted") AND NOT EXISTS (
+    SELECT 1
+    FROM "MessageStatuses" AS m0
+    WHERE m."Id" = m0."MessageId" AND m0."UserId" = @__currentUserId_1 AND m0."Status" = 2)
+2025-09-20 20:34:39.966 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ChatBackend.DTOs.ConversationDto'.
+2025-09-20 20:34:42.338 +05:30 [INF] Executed action ChatBackend.Controllers.ConversationsController.CreateConversation (ChatBackend) in 65338.3115ms
+2025-09-20 20:34:42.344 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.ConversationsController.CreateConversation (ChatBackend)'
+2025-09-20 20:34:42.351 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7207/api/Conversations - 201 null application/json; charset=utf-8 65540.285ms
+2025-09-20 20:35:00.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Conversations - null null
+2025-09-20 20:35:00.742 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.ConversationsController.GetUserConversations (ChatBackend)'
+2025-09-20 20:35:00.753 +05:30 [INF] Route matched with {action = "GetUserConversations", controller = "Conversations"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.ConversationDto]]] GetUserConversations() on controller ChatBackend.Controllers.ConversationsController (ChatBackend).
+2025-09-20 20:35:43.689 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."AvatarUrl", c."CreatedAt", c."CreatedByUserId", c."DeletedAt", c."Description", c."IsDeleted", c."Name", c."Type", c."UpdatedAt", u0."Id", u0."AvatarUrl", u0."CreatedAt", u0."Email", u0."LastSeen", u0."Status", u0."UpdatedAt", u0."Username", u."Id", s."Id", s."ConversationId", s."IsActive", s."JoinedAt", s."LastReadAt", s."LeftAt", s."Role", s."UserId", s."Id0", s."AvatarUrl", s."CreatedAt", s."Email", s."LastSeen", s."Status", s."UpdatedAt", s."Username"
+FROM "UserConversations" AS u
+INNER JOIN "Conversations" AS c ON u."ConversationId" = c."Id"
+INNER JOIN "Users" AS u0 ON c."CreatedByUserId" = u0."Id"
+LEFT JOIN (
+    SELECT u1."Id", u1."ConversationId", u1."IsActive", u1."JoinedAt", u1."LastReadAt", u1."LeftAt", u1."Role", u1."UserId", u2."Id" AS "Id0", u2."AvatarUrl", u2."CreatedAt", u2."Email", u2."LastSeen", u2."Status", u2."UpdatedAt", u2."Username"
+    FROM "UserConversations" AS u1
+    INNER JOIN "Users" AS u2 ON u1."UserId" = u2."Id"
+) AS s ON c."Id" = s."ConversationId"
+WHERE u."UserId" = @__userId_0 AND u."IsActive" AND NOT (c."IsDeleted")
+ORDER BY u."Id", c."Id", u0."Id", s."Id"
+2025-09-20 20:36:29.650 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__conversation_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."Content", m."ContentType", m."ConversationId", m."CreatedAt", m."DeletedAt", m."FileName", m."FileSize", m."FileUrl", m."IsDeleted", m."ReplyToMessageId", m."SenderId", m."Type", m."UpdatedAt", u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username"
+FROM "Messages" AS m
+INNER JOIN "Users" AS u ON m."SenderId" = u."Id"
+WHERE m."ConversationId" = @__conversation_Id_0 AND NOT (m."IsDeleted")
+ORDER BY m."CreatedAt" DESC
+LIMIT 1
+2025-09-20 20:36:34.300 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__conversation_Id_0='?' (DbType = Guid), @__currentUserId_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Messages" AS m
+WHERE m."ConversationId" = @__conversation_Id_0 AND m."SenderId" <> @__currentUserId_1 AND NOT (m."IsDeleted") AND NOT EXISTS (
+    SELECT 1
+    FROM "MessageStatuses" AS m0
+    WHERE m."Id" = m0."MessageId" AND m0."UserId" = @__currentUserId_1 AND m0."Status" = 2)
+2025-09-20 20:37:13.514 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.ConversationDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-20 20:37:13.528 +05:30 [INF] Executed action ChatBackend.Controllers.ConversationsController.GetUserConversations (ChatBackend) in 132772.053ms
+2025-09-20 20:37:13.534 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.ConversationsController.GetUserConversations (ChatBackend)'
+2025-09-20 20:37:13.541 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Conversations - 200 null application/json; charset=utf-8 132867.8488ms
+2025-09-20 20:38:42.221 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Messages?conversationId=9bbcf5de-5470-4033-adbb-32f03d097e0b&page=1&pageSize=50 - null null
+2025-09-20 20:38:42.271 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.MessagesController.GetMessages (ChatBackend)'
+2025-09-20 20:38:42.298 +05:30 [INF] Route matched with {action = "GetMessages", controller = "Messages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.MessageDto]]] GetMessages(System.Guid, Int32, Int32) on controller ChatBackend.Controllers.MessagesController (ChatBackend).
+2025-09-20 20:38:42.505 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__conversationId_0='?' (DbType = Guid), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT m0."Id", m0."Content", m0."ContentType", m0."ConversationId", m0."CreatedAt", m0."DeletedAt", m0."FileName", m0."FileSize", m0."FileUrl", m0."IsDeleted", m0."ReplyToMessageId", m0."SenderId", m0."Type", m0."UpdatedAt", u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username", m1."Id", m1."Content", m1."ContentType", m1."ConversationId", m1."CreatedAt", m1."DeletedAt", m1."FileName", m1."FileSize", m1."FileUrl", m1."IsDeleted", m1."ReplyToMessageId", m1."SenderId", m1."Type", m1."UpdatedAt", u0."Id", u0."AvatarUrl", u0."CreatedAt", u0."Email", u0."LastSeen", u0."Status", u0."UpdatedAt", u0."Username", s."Id", s."CreatedAt", s."MessageId", s."Status", s."UpdatedAt", s."UserId", s."Id0", s."AvatarUrl", s."CreatedAt0", s."Email", s."LastSeen", s."Status0", s."UpdatedAt0", s."Username"
+FROM (
+    SELECT m."Id", m."Content", m."ContentType", m."ConversationId", m."CreatedAt", m."DeletedAt", m."FileName", m."FileSize", m."FileUrl", m."IsDeleted", m."ReplyToMessageId", m."SenderId", m."Type", m."UpdatedAt"
+    FROM "Messages" AS m
+    WHERE m."ConversationId" = @__conversationId_0 AND NOT (m."IsDeleted")
+    ORDER BY m."CreatedAt" DESC
+    LIMIT @__p_2 OFFSET @__p_1
+) AS m0
+INNER JOIN "Users" AS u ON m0."SenderId" = u."Id"
+LEFT JOIN "Messages" AS m1 ON m0."ReplyToMessageId" = m1."Id"
+LEFT JOIN "Users" AS u0 ON m1."SenderId" = u0."Id"
+LEFT JOIN (
+    SELECT m2."Id", m2."CreatedAt", m2."MessageId", m2."Status", m2."UpdatedAt", m2."UserId", u1."Id" AS "Id0", u1."AvatarUrl", u1."CreatedAt" AS "CreatedAt0", u1."Email", u1."LastSeen", u1."Status" AS "Status0", u1."UpdatedAt" AS "UpdatedAt0", u1."Username"
+    FROM "MessageStatuses" AS m2
+    INNER JOIN "Users" AS u1 ON m2."UserId" = u1."Id"
+) AS s ON m0."Id" = s."MessageId"
+ORDER BY m0."CreatedAt" DESC, m0."Id", u."Id", m1."Id", u0."Id", s."Id"
+2025-09-20 20:38:42.514 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.MessageDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-20 20:38:42.519 +05:30 [INF] Executed action ChatBackend.Controllers.MessagesController.GetMessages (ChatBackend) in 215.3353ms
+2025-09-20 20:38:42.524 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.MessagesController.GetMessages (ChatBackend)'
+2025-09-20 20:38:42.527 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Messages?conversationId=9bbcf5de-5470-4033-adbb-32f03d097e0b&page=1&pageSize=50 - 200 null application/json; charset=utf-8 307.4456ms
+2025-09-20 20:38:44.894 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7207/api/Messages?conversationId=9bbcf5de-5470-4033-adbb-32f03d097e0b&page=1&pageSize=50 - null null
+2025-09-20 20:38:44.906 +05:30 [INF] Executing endpoint 'ChatBackend.Controllers.MessagesController.GetMessages (ChatBackend)'
+2025-09-20 20:38:44.910 +05:30 [INF] Route matched with {action = "GetMessages", controller = "Messages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ChatBackend.DTOs.MessageDto]]] GetMessages(System.Guid, Int32, Int32) on controller ChatBackend.Controllers.MessagesController (ChatBackend).
+2025-09-20 20:38:44.930 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__conversationId_0='?' (DbType = Guid), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT m0."Id", m0."Content", m0."ContentType", m0."ConversationId", m0."CreatedAt", m0."DeletedAt", m0."FileName", m0."FileSize", m0."FileUrl", m0."IsDeleted", m0."ReplyToMessageId", m0."SenderId", m0."Type", m0."UpdatedAt", u."Id", u."AvatarUrl", u."CreatedAt", u."Email", u."LastSeen", u."Status", u."UpdatedAt", u."Username", m1."Id", m1."Content", m1."ContentType", m1."ConversationId", m1."CreatedAt", m1."DeletedAt", m1."FileName", m1."FileSize", m1."FileUrl", m1."IsDeleted", m1."ReplyToMessageId", m1."SenderId", m1."Type", m1."UpdatedAt", u0."Id", u0."AvatarUrl", u0."CreatedAt", u0."Email", u0."LastSeen", u0."Status", u0."UpdatedAt", u0."Username", s."Id", s."CreatedAt", s."MessageId", s."Status", s."UpdatedAt", s."UserId", s."Id0", s."AvatarUrl", s."CreatedAt0", s."Email", s."LastSeen", s."Status0", s."UpdatedAt0", s."Username"
+FROM (
+    SELECT m."Id", m."Content", m."ContentType", m."ConversationId", m."CreatedAt", m."DeletedAt", m."FileName", m."FileSize", m."FileUrl", m."IsDeleted", m."ReplyToMessageId", m."SenderId", m."Type", m."UpdatedAt"
+    FROM "Messages" AS m
+    WHERE m."ConversationId" = @__conversationId_0 AND NOT (m."IsDeleted")
+    ORDER BY m."CreatedAt" DESC
+    LIMIT @__p_2 OFFSET @__p_1
+) AS m0
+INNER JOIN "Users" AS u ON m0."SenderId" = u."Id"
+LEFT JOIN "Messages" AS m1 ON m0."ReplyToMessageId" = m1."Id"
+LEFT JOIN "Users" AS u0 ON m1."SenderId" = u0."Id"
+LEFT JOIN (
+    SELECT m2."Id", m2."CreatedAt", m2."MessageId", m2."Status", m2."UpdatedAt", m2."UserId", u1."Id" AS "Id0", u1."AvatarUrl", u1."CreatedAt" AS "CreatedAt0", u1."Email", u1."LastSeen", u1."Status" AS "Status0", u1."UpdatedAt" AS "UpdatedAt0", u1."Username"
+    FROM "MessageStatuses" AS m2
+    INNER JOIN "Users" AS u1 ON m2."UserId" = u1."Id"
+) AS s ON m0."Id" = s."MessageId"
+ORDER BY m0."CreatedAt" DESC, m0."Id", u."Id", m1."Id", u0."Id", s."Id"
+2025-09-20 20:38:44.937 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatBackend.DTOs.MessageDto, ChatBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-20 20:38:44.942 +05:30 [INF] Executed action ChatBackend.Controllers.MessagesController.GetMessages (ChatBackend) in 27.322ms
+2025-09-20 20:38:44.946 +05:30 [INF] Executed endpoint 'ChatBackend.Controllers.MessagesController.GetMessages (ChatBackend)'
+2025-09-20 20:38:44.949 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7207/api/Messages?conversationId=9bbcf5de-5470-4033-adbb-32f03d097e0b&page=1&pageSize=50 - 200 null application/json; charset=utf-8 56.1659ms
