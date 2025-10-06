@@ -2,7 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBackend", "ChatBackend.csproj", "{35EC0A22-5115-0A4D-77DA-60482E03AC2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBackend.Models", "ChatBackend.Models\ChatBackend.Models.csproj", "{4E8AB651-62A7-40D8-B149-914E61A6369A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBackend", "ChatBackend.API\ChatBackend.csproj", "{F4D66AD8-44E5-62EC-F90E-7B29AB2D7332}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,10 +12,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{35EC0A22-5115-0A4D-77DA-60482E03AC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35EC0A22-5115-0A4D-77DA-60482E03AC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35EC0A22-5115-0A4D-77DA-60482E03AC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35EC0A22-5115-0A4D-77DA-60482E03AC2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8AB651-62A7-40D8-B149-914E61A6369A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8AB651-62A7-40D8-B149-914E61A6369A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8AB651-62A7-40D8-B149-914E61A6369A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8AB651-62A7-40D8-B149-914E61A6369A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D66AD8-44E5-62EC-F90E-7B29AB2D7332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D66AD8-44E5-62EC-F90E-7B29AB2D7332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D66AD8-44E5-62EC-F90E-7B29AB2D7332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D66AD8-44E5-62EC-F90E-7B29AB2D7332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
