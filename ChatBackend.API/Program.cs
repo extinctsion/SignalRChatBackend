@@ -1,15 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using Amazon.S3;
 using Amazon.Extensions.NETCore.Setup;
 using Serilog;
 using ChatBackend.Data;
 using ChatBackend.Services;
 using ChatBackend.Hubs;
-using ChatBackend.Middleware;
 using System.Text;
+using Scalar.AspNetCore;
 
 // Configure Serilog
 Log.Logger = new LoggerConfiguration()
@@ -26,47 +26,30 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Configure Swagger/OpenAPI
-builder.Services.AddSwaggerGen(options =>
+
+builder.Services.AddOpenApi(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo
+    options.AddDocumentTransformer((document, context, cancellationToken) =>
     {
-        Version = "v1",
-        Title = "Chat Backend API",
-        Description = "A scalable SignalR chat backend with real-time messaging",
-        Contact = new OpenApiContact
+        document.Components ??= new OpenApiComponents();
+        document.Components.SecuritySchemes = new Dictionary<string, IOpenApiSecurityScheme>
         {
-            Name = "Chat Backend API"
-        }
-    });
-    
-    // Add JWT Authentication to Swagger
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Description = "JWT Authorization header using the Bearer scheme. Enter 'Bearer' [space] and then your token in the text input below.",
-        Name = "Authorization",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer"
-    });
-    
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
+            ["Bearer"] = new OpenApiSecurityScheme
             {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
+                Description = "JWT Authorization header using the Bearer scheme. Enter your token directly.",
+                Name = "Authorization",
+                In = ParameterLocation.Header,
+                Type = SecuritySchemeType.Http,
+                Scheme = "bearer",
+                BearerFormat = "JWT"
+            }
+        };
+
+
+
+
+        return Task.CompletedTask;
     });
-    
-    // Configure file upload support
-    options.OperationFilter<FileUploadOperationFilter>();
 });
 
 // Add Entity Framework
@@ -145,8 +128,14 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.MapOpenApi();
+    app.MapScalarApiReference(opt =>
+    {
+        opt.Title = "Chatbackend API";
+        opt.Theme = ScalarTheme.Mars;
+        opt.PersistentAuthentication = true;
+       
+    });
 }
 
 app.UseHttpsRedirection();
