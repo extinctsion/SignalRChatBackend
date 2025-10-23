@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  chatbackend:
+  chatapi:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       # Development-specific logging
@@ -16,18 +16,3 @@ services:
       - ./logs:/app/logs
     ports:
       - "5000:8080"   # HTTP only
-
-  # Redis Commander for development (optional Redis web UI)
-  redis-commander:
-    image: rediscommander/redis-commander:latest
-    container_name: redis-commander
-    environment:
-      - REDIS_HOSTS=local:redis:6379
-    ports:
-      - "8082:8081"  # Changed to avoid conflicts
-    depends_on:
-      - redis
-    networks:
-      - chat-network
-    profiles:
-      - tools  # Use with: docker-compose --profile tools up
