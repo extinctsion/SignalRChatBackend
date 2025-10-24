@@ -1,6 +1,7 @@
 name: Test Build and Release (in fork)
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - bug/updateWorkflow-24
