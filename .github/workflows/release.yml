@@ -1,9 +1,9 @@
-name: Build and Release
+name: Test Build and Release (in fork)
 
 on:
   push:
     branches:
-      - main
+      - bug/updateWorkflow-24
 
 jobs:
   build-release:
