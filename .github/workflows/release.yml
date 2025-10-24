@@ -1,10 +1,9 @@
-name: Test Build and Release (in fork)
+name: Build and Release
 
 on:
-  workflow_dispatch:
   push:
     branches:
-      - bug/updateWorkflow-24
+      - main
 
 jobs:
   build-release:
